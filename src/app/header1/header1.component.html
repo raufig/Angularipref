@@ -4,7 +4,7 @@
         <span><i class="fas fa-bars mr-3 pt-1" id="icono-nav" (click)='desplegar()'></i></span>
     </div>
 
-    <img class="logo-negro mb-1" src="../../assets/img/home/logo-negro.png" alt="logo-ipref">
+    <img class="logo-negro mb-1" routerLink='home' src="../../assets/img/home/logo-negro.png" alt="logo-ipref">
 
 
     <div class="ubicacion-perfil">
@@ -14,14 +14,14 @@
 
 
     <nav id="nav" (click)="ocultar()">
-        <img class="logo-bienvenida" src="../../assets/img/home/logo-negro.png" alt="logo-ipref">
+        <img class="logo-bienvenida"  src="../../assets/img/home/logo-negro.png" alt="logo-ipref">
         <hr>
-        <img class="img-usuario" src="../../assets/img/home/perfil.jpg" alt="imagen-usuario">
+        <img class="img-usuario" routerLink='perfilUsuario' src="../../assets/img/home/perfil.jpg" alt="imagen-usuario">
         <p class="nombre-usuario">Hola Andrés</p>
 
         <section class="items-nav">
             <a routerLink='home'>Home</a>
-            <a href="#">Ajuste de cuenta</a>
+            <a routerLink='perfilUsuario'>Ajuste de cuenta</a>
             <a routerLink='metodos-pago'>Métodos de pago</a>
             <a routerLink='cupon'>Ingresar un cupón</a>
             <a href="#" class="sugerencias-item"><i class="fas fa-plus"></i>Sugerencias de Restaurantes

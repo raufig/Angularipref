@@ -32,6 +32,8 @@ const appRouter:Routes=[
   {path: 'mesas', component: MesasRestauranteComponent},
   {path: 'metodos-pago', component: MetodosPagoComponent},
   {path: 'cupon', component: CuponComponent},
+  {path: 'perfilUsuario', component: PerfilUsuarioComponent},
+  {path: 'perfilRestaurante', component: PerfilRestauranteComponent},
 ]
 
 
