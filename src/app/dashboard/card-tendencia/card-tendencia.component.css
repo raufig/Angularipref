@@ -1,0 +1,55 @@
+
+/* tarjeta */
+.cardOrder-dashboard{
+    margin: 15px auto;
+    box-shadow: 17px 29px 50px -19px rgba(0,0,0,0.75);
+    background: #fff;
+    transition: .4s all;
+    width: 280px;
+   
+  }
+   .cardOrder-dashboard:hover{
+     transform: scale(1.12);
+  }
+  
+   .treddingOrders-dashboard p{
+     margin: 6px 0;
+  }
+   .treddingOrders-dashboard .nombre-plato{
+     font-weight: bold;
+  }
+   .treddingOrders-dashboard .hijo-cardOrder span{
+    font-weight: bold;
+    color: red;
+  }
+   .treddingOrders-dashboard .precio-plato{
+    color: #76bd1d;
+    font-weight: bold;
+  }
+   .cardOrder-head img{
+    width: 100%;
+    cursor: pointer;
+    opacity: .9;
+    transition: .4s all;
+  }
+    .cardOrder-head img:hover{
+    opacity: 1;
+  } 
+   .cardOrder-body{
+    width: 100%;
+    text-align: center;
+    padding-right: 20px;
+  }
+   .cardOrder-body .hijo-cardOrder{
+    width: 50%;
+    text-align:center;
+  }
+  
+ .precio-plato{
+    color: #76bd1d;
+    font-weight: bold;
+  }
+.hijo-cardOrder span{
+    font-weight: bold;
+    color: red;
+  }

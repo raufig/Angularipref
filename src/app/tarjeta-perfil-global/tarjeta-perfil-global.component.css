@@ -1,0 +1,104 @@
+
+  /*--------------------informacion usuario--------------------*/
+  .infoUser{
+    margin: 50px 0 0 100px;
+}
+
+.infoUser>.img-info-perfil>.editprofile{
+    width: 100px;
+    margin: 20px auto;
+    max-width: 200px;
+    position: relative;
+    border-radius: 50%;
+}
+
+  .editprofile:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.397);
+  }
+  .editprofile:hover .overlay p {
+    display: block;
+    width: 100px;
+  }
+  .editprofile img {
+    width: 100%;
+    border-radius: 50%;
+    height: auto;
+  }
+  .editprofile .overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .editprofile .overlay input {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    bottom: 20px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .editprofile .overlay p {
+    position: absolute;
+    bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    display: none;
+  }
+  .editprofile .overlay p i{
+      width: 100px;
+  }
+
+.infoUser>.info-perfil{
+    margin-left: 20px;
+}
+.infoUser>.info-perfil>p{
+    color: #707070;
+    cursor: pointer;
+    }
+.infoUser>.info-perfil>a{
+    color: #707070;
+  }
+/*--------------------------SlideToggle----------------------------*/
+
+
+  
+.infoUser>.info-perfil>p>i{
+margin-left: 80px;
+
+}
+.infoUser>.info-perfil>.toggle-container{
+    transition: height 0.35s ease-in-out;
+    overflow: hidden;
+
+}
+.infoUser>.info-perfil>.toggle-container>input{
+    border: none;
+    border-bottom: 2px solid  #707070;
+}
+
+.infoUser>.info-perfil>.toggle-container:not(.active) {
+    display: none;
+  }
+
+  /* ------------------secondNAV----------------- */
+
+  section>.second-Nav{
+    width: 500px;
+    margin-left: 250px;
+  }
+  section>.second-Nav>a{
+    color: #707070;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  section>.second-Nav>.active{
+    
+    border-bottom: 4px solid rgb(16, 230, 219);
+    padding-bottom: 5px;
+  
+  }

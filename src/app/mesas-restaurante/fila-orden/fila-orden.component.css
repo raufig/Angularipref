@@ -1,0 +1,32 @@
+
+/* CONTENIDO TABLA IZQ */
+.mrTabla-row{
+    background: #fff;
+    margin-top: 5px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.mrTabla-row>p{
+    width: 20%;
+    margin: 0;
+}
+.mrbotones-tabla button {
+    border-radius: 5px;
+    width: 55px;
+    font-size: small;
+    margin: 0 2px;
+    color: white;
+    border: none;
+}
+.mrAzul-boton {
+    background: rgb(103, 168, 211);
+}
+.mrVerde-boton {
+    background: rgb(9, 187, 23);
+}
+.mrRojo-boton {
+    background: red;
+}

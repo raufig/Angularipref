@@ -1,0 +1,84 @@
+
+
+
+
+<main class="container">
+      <app-tarjeta-perfil-global></app-tarjeta-perfil-global>
+ 
+        <section class="col-12 d-flex flex-column d-lg-flex flex-lg-row mt-4 ">
+          <div class="container d-md-flex flex-md-row d-flex justify-content-around ">
+                <div class="container col-lg-6 col-md-6 p-2 m-1  d-flex justify-content-around boxContent">
+                  <p>Disponibles</p>
+                  <p>10/50</p>
+                </div>
+                <div class="container col-lg-6 col-md-6 p-2 m-1 ml-2 r d-flex justify-content-around boxContent">
+                  <p>Pagados hoy</p>
+                  <p>56</p>
+                </div>
+          </div>
+
+          <div class="container d-md-flex flex-md-row  d-flex justify-content-around ">
+
+                <div class="container col-lg-6 col-md-6 p-2 m-1  d-flex justify-content-around boxContent">
+                  <p>Pendientes pago</p>
+                  <p>25</p>
+                </div>
+                <div class="container col-lg-6 col-md-6 p-2 m-1 ml-2  d-flex justify-content-around boxContent">
+                  <p>Ordenes realizadas</p>
+                  <p>19</p>
+                </div>
+          </div>
+         </section>
+
+<!-- ---------------------------ORDENES POR MESA ----------------------->
+        <section class="container d-flex flex-column d-lg-flex flex-lg-row">
+         <!-- ---------------------------TABLA IZQUIERDA NO.MESA--------------------------->
+          <div class="col-sm-12 col-lg-6 p-3 align-items-center">
+                <div class="mrTabla-head d-flex align-items-center boxContent">
+                  <h5>No. mesa</h5>
+                  <h5>Estado orden</h5>
+                  <h5>tiempo (entrega)</h5>
+                </div>
+    
+                <app-fila-orden *ngFor='let pedido of pedidos;let indice=index'></app-fila-orden>
+          </div>
+
+
+          <!-- ---------------------------TABLA DERECHA PEDIDO--------------------------->
+          <div class="col-sm-12 col-lg-6 p-3">
+            <div class="mrCont_tabla overflow-auto">
+                <div class="mrTabla-headDisp boxContent sticky-top">
+                  <div class="container" >
+                    <h4>Mesa15</h4>
+                  </div>
+                  <div class="container d-flex justify-content-around">
+                    <h5>Pedido</h5>
+                    <h5>Cantidad</h5>
+                    <h5>Estado</h5>
+                  </div>
+                </div>
+
+                <div class="mrTabla-row d-flex justify-content-around" *ngFor='let pedido of pedidos'>
+                  <p>Hamburguesa de pollo</p>
+                  <p>2</p>
+                  <p>Green</p>
+                </div> 
+            </div>
+            
+            <div class="tabla-ultimas-ordenes cont-tabla-derecha m-0 p-0 align-items-center">
+              <div class="cont-tabla ">
+                  <div class="mrTabla-headDisp d-flex justify-content-around mt-3 mb-2 ">
+                    <h5>Mesas Disponibles</h5>
+                  </div>
+                    <div class="mrImgInfo m-0 p-0 d-flex justify-content-around">
+                      <div class=" position-relative" *ngFor='let pedido of pedidos'>
+                        <p class="mrCentNUm position-absolute">2</p>
+                        <img src="../../assets/img/home/restaurant.png" alt="">
+                      </div>
+                    </div>
+              </div>        
+            </div>
+          </div>
+
+        </section>
+    </main>

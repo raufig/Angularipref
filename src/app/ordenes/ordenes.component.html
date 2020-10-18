@@ -1,0 +1,35 @@
+
+
+
+<main id="main" class="w-100">
+
+
+   <app-tarjeta-perfil-global></app-tarjeta-perfil-global>
+
+       <section class="container general-ultimas-ordenes d-flex flex-column d-lg-flex flex-lg-row">
+
+         <!-- ---------------------ULTIMAS ORDENES -------------------------->
+         <div class="col-sm-12 col-lg-6 ">
+           <h3 class="text-center mb-4">Ultimas ordenes</h3>
+             <app-tarjeta-orden></app-tarjeta-orden> 
+            
+         </div>
+
+         <!-- ---------------------ESTADO DE ORDENES -------------------------->
+         <div class="tabla-ultimas-ordenes cont-tabla-derecha  m-0 p-0 align-items-center col-sm-12 col-lg-6">
+           <h3 class="mb-4 text-center">Estado de orden</h3>
+           <div class="cont-tabla ">
+               <div class="tabla-head d-flex align-items-center">
+                 <h5>Cliente</h5>
+                 <h5>Producto</h5>
+                 <h5>Estado</h5>
+                 <h5>Tiempo</h5>
+                 <h5>Total</h5>
+               </div>
+
+               <app-tarjeta-estado></app-tarjeta-estado>
+               
+           </div>
+         </div>
+       </section>
+   </main>

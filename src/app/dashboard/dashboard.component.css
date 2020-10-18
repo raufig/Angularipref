@@ -1,0 +1,222 @@
+
+
+.sub-menu i{
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 30px 0;
+   
+}
+.sub-menu div{
+    position: relative;
+}
+
+ .sub-menu .opciones-menu{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    left: 215px;
+    opacity: 0;
+    transition: .4s all;
+} 
+
+.sub-menu .visto{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    left: 215px;
+    opacity: 1;
+    transition: .4s all;
+    background-color: #fff;
+} 
+.sub-menu .perfil{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    left: 215px;
+    opacity: 0;
+    transition: .4s all;
+    background-color: #fff;
+} 
+.sub-menu .perfil-visto{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    left: 215px;
+    opacity: 1;
+    transition: .4s all;
+    background-color: #fff;
+} 
+.sub-menu img{
+  display: block;
+  padding-top: 15px;
+  width: 50px;
+  margin: auto;
+  transition: .4s all;
+  cursor: pointer;
+
+}
+
+.sub-menu .opciones-menu {
+  width: 140px;
+  padding:10px;
+  text-align: center;
+
+}
+.sub-menu .opciones-menu img{
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+
+  }
+  .sub-menu .opciones-menu p{
+    font-size: 13px;
+    margin: 0;
+  }
+  .opc-pri-dash{
+    transition: .4s all;
+    cursor: pointer;
+  }
+  .opc-pri-dash:hover{
+    color: #76bd1d;
+  }
+
+
+  /* ------header Dashboard------- */
+header>nav>.nav-icon-edit{
+  display: block;
+  padding-top: 15px;
+  width: 80px;
+  height: 90px;
+  margin: auto;
+  transition: .4s all;
+  cursor: pointer;
+}
+header>nav>.nav-icon-edit:hover{
+  border: 1px solid #ccc;
+}
+
+/* -----section overview------ */
+
+
+.titulo-overview{
+  width: 70%;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+.titulo-tendencias{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+main>.overview-dashboard{
+width: 90%;
+margin:20px auto 0 auto;
+
+}
+main>.overview-dashboard iframe{
+  width: 1000px;
+  height: 370px;
+ 
+
+}
+main .cardOrder-head{
+  width:100%;
+}
+main .treddingOrders-dashboard{
+   width: 90%;
+   margin: auto;
+   flex-wrap: wrap;
+   margin-top: 20px;
+   text-align: center;
+   
+   
+
+}
+/* tarjeta */
+main .cardOrder-dashboard{
+  margin: 15px auto;
+  box-shadow: 17px 29px 50px -19px rgba(0,0,0,0.75);
+  background: #fff;
+  transition: .4s all;
+  width: 280px;
+ 
+}
+main .cardOrder-dashboard:hover{
+   transform: scale(1.12);
+}
+
+main .treddingOrders-dashboard p{
+   margin: 6px 0;
+}
+main .treddingOrders-dashboard .nombre-plato{
+   font-weight: bold;
+}
+main .treddingOrders-dashboard .hijo-cardOrder span{
+  font-weight: bold;
+  color: red;
+}
+main .treddingOrders-dashboard .precio-plato{
+  color: #76bd1d;
+  font-weight: bold;
+}
+main .cardOrder-head img{
+  width: 100%;
+  cursor: pointer;
+  opacity: .9;
+  transition: .4s all;
+}
+ main .cardOrder-head img:hover{
+  opacity: 1;
+} 
+main .cardOrder-body{
+  width: 100%;
+  text-align: center;
+  padding-right: 20px;
+}
+main .cardOrder-body .hijo-cardOrder{
+  width: 50%;
+  text-align:center;
+}
+
+
+  /* ---------------------ULTIMAS ORDEBNES---------------- */
+  .general-ultimas-ordenes{
+    width: 90%;
+    margin:60px auto;
+    /* align-items: center; */
+ 
+
+  }
+  .general-ultimas-ordenes>div{
+    width: 50%;
+    
+   
+  }
+.tabla-head{
+  align-items: center;
+  padding: 10px 5px;
+  background: rgb(212, 212, 212);
+  border-radius: 2px;
+  text-align: center;
+}
+.tabla-head>h5{
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: bold;
+  
+}
+.tabla-body{
+  background: #fff;
+  margin-top: 5px;
+  padding: 10px 5px;
+  border-radius: 2px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.tabla-body>p{
+  width: 20%;
+  margin: 0;
+}

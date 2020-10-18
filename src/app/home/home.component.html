@@ -1,0 +1,72 @@
+
+<main class='w-100'>
+
+    <!-- input -->
+    <section class="cont-navbar d-flex justify-content-between">
+        <img class="tomates" src="../../assets/img/home/tomates.png" alt="imagen-tomates">
+        <div class="navbar">
+            <input type="text" placeholder="¿Qué estás buscando?">
+            <i class="fas fa-search"></i>
+        </div>
+        <img class="plato" src="../../assets/img/home/Plato01.png" alt="imagen-plato">
+    </section>
+
+
+
+    <!-- carousel -->
+    <div class="top-content tmp">
+        <div class="container-fluid">
+            <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                 <div class="carousel-inner row w-100 mx-auto d-flex" id="carousel"  role="listbox" >
+
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active" *ngFor='let imagen of imagenesCarousel'>
+                            <img src="{{imagen}}" class="img-fluid mx-auto d-block" alt="img1">
+                        </div>
+
+
+
+                       </div>
+
+                      <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+            </div>
+        </div>
+    </div>  
+
+
+
+    <!-- cartas -->
+    <section class="cartas-menu" id="cartas">
+        <div class="cont-cartas-general d-flex justify-content-between"  >
+            <h1 class="tm">Solo para ti</h1>
+
+            
+            <div class="carta-home" *ngFor='let imagen of imagenesCarousel'>
+                <div class="carta-head-home">
+                    <span class="categoria">Popular</span>
+                  <div class="sombra-body">
+                       <small>Veganismo,verduras,ensaladas verdes,al vapor.</small>
+                  </div>
+                </div>
+                <div class="carta-body-home d-flex">
+                    <div class="nombre-cart-body">
+                      <p>Hamburguesa</p>
+                      <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="nombre-establecimiento">
+                        <img src="../img/carrousel/german.jpg" alt="">
+                    </div>
+                </div>
+             </div>
+
+
+        </div>
+    </section>
+
+</main>

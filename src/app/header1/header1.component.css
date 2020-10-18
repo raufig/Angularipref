@@ -1,0 +1,166 @@
+header{
+    background: #fff;
+    height: 60px;
+    padding: 0 20px;
+    align-items: center;
+    position: relative;
+     box-shadow: -1px 10px 29px -15px rgba(0,0,0,0.75);
+  
+}
+header>.ubicacion-perfil>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+header>.ubicacion-perfil>span>.fa-map-marker-alt{
+    font-size: 25px;
+    cursor: pointer;
+    transition: .4s all;
+    position: relative;
+    top:4px;
+    
+}
+header>.logo-negro{
+    width: 70px;
+    height: 30px;
+   
+}
+header>.cont-menu>span>.fa-bars{
+   font-size: 25px;
+   color:rgb(199, 198, 198);
+   cursor: pointer;
+   transition: .4s all;
+   
+}
+
+ header>nav{
+     position: absolute;
+     background: #fff;
+     top: 0;
+     left: -245px;  
+     /*  left:0;  */
+     width: 245px;
+     height: 967px;
+     transition: .4s all;
+     text-align: center;
+    padding: 90px 30px 90px 30px; 
+    z-index: 3;
+    
+ 
+   
+ }
+
+ header>nav>.logo-bienvenida{
+   width: 90px;
+   height: 40px;
+   margin: auto;
+}
+header>nav>hr{
+   background-color: grey;
+   width: 30px;
+   height: 1px;
+   margin:10px auto;
+
+ }
+header>nav>.img-usuario{
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 100%;
+    margin:30px auto 6px auto;
+    transition: .4s all;
+    cursor: pointer;
+ }
+ header>nav>.img-usuario:hover{
+     border: 1px solid #ccc;
+ }
+ header>nav>.nombre-usuario{
+     font-size: 13px;
+     margin-bottom: 40px;
+ }
+ header>nav>.items-nav>a{
+    display: block;
+    margin: 12px 0px;
+    text-align: start;
+    font-size: 13px;
+    color: #707070;
+    transition: color 400ms ease;
+    position: relative;
+ }
+ header>nav>.items-nav>a>.fa-plus{
+    position: absolute;
+    left: -14px;
+    top: 3px;
+    font-size: 11px;
+ }
+ header>nav>.items-nav>a:hover{
+    color: #3d3d3d;
+    text-decoration: none;
+ }
+ /* header>nav>.items-nav>.sugerencias-item:hover{
+    color: #707070;
+ } */
+ header>nav>.items-nav>a>.lista-sugerencias>li{
+   list-style: none;
+   text-decoration: none;
+   margin: 6px 0;
+ }
+
+ header>nav>.items-nav>a>.lista-sugerencias>li>.fa-minus{
+     font-size: 8px;
+     margin-right: 4px;
+ }
+ 
+ header>nav>.seccion-preferencias>.titulo-preferencias{
+    margin-top: 20px;
+   font-size: 14px;
+   font-weight: 500;
+   color: #3a9691;
+   text-align: start;
+   margin-bottom: 25px;
+ }
+ header>nav>.seccion-preferencias>span{
+    font-size: 13px;
+    display: block;
+    text-align: start;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #707070;
+
+ }
+ header>nav>.seccion-preferencias>span>.fa-folder{
+    color: #e3e3e3;
+    transition: .8 all ease;
+    text-shadow: 1px 1px #e3e3e3;
+  
+ }
+ header>nav>.seccion-preferencias>span:hover >.fa-folder{
+    color: #3a9691;
+    text-shadow: 1px 1px #3a9691;
+ }
+
+ header>nav>.btn-more{
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 100%;
+  transition: .4s all;
+  background: transparent;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  text-shadow: .2px .4px black;
+  
+ }
+ header>nav>.btn-more:hover{
+     background-color: rgb(248, 246, 246);  
+}
+header>nav>.btn-more:focus{
+    outline: none;
+}
+ 
+ header>nav>.btn-more>.fa-ellipsis-h{
+    display: block; color: #3a9691;
+   }

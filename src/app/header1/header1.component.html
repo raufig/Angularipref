@@ -1,0 +1,51 @@
+<header class="d-flex justify-content-between">
+   
+    <div class="cont-menu" >
+        <span><i class="fas fa-bars mr-3 pt-1" id="icono-nav" (click)='desplegar()'></i></span>
+    </div>
+
+    <img class="logo-negro mb-1" src="../../assets/img/home/logo-negro.png" alt="logo-ipref">
+
+
+    <div class="ubicacion-perfil">
+        <span><i class="fas fa-map-marker-alt "></i></span>     
+        <img class="img-usuario" src="../../assets/img/home/perfil.jpg" alt="imagen-usuario">
+    </div>
+
+
+    <nav id="nav" (click)="ocultar()">
+        <img class="logo-bienvenida" src="../../assets/img/home/logo-negro.png" alt="logo-ipref">
+        <hr>
+        <img class="img-usuario" src="../../assets/img/home/perfil.jpg" alt="imagen-usuario">
+        <p class="nombre-usuario">Hola Andrés</p>
+
+        <section class="items-nav">
+            <a routerLink='home'>Home</a>
+            <a href="#">Ajuste de cuenta</a>
+            <a routerLink='metodos-pago'>Métodos de pago</a>
+            <a routerLink='cupon'>Ingresar un cupón</a>
+            <a href="#" class="sugerencias-item"><i class="fas fa-plus"></i>Sugerencias de Restaurantes
+                <ol class="lista-sugerencias d-none">
+                    <li><i class="fas fa-minus"></i>Restaurantes cercanos</li>
+                    <li><i class="fas fa-minus"></i>Tiempo de atención</li>
+                    <li><i class="fas fa-minus"></i>Preferencias de comida</li>
+                </ol>
+            </a>
+        </section>
+
+        <section class="seccion-preferencias">
+            <h3 class="titulo-preferencias"><i class="fas fa-plus"></i> NUEVA PREFERENCIA</h3>
+            <span><i class="far fa-folder mr-2"></i>Tipos de alimentación</span>
+            <span><i class="far fa-folder mr-2"></i>Tipos de restaurante</span>
+            <span><i class="far fa-folder mr-2"></i>Adiciones</span>
+            <span><i class="far fa-folder mr-2"></i>Comidas del mundo</span>
+            <span><i class="far fa-folder mr-2"></i>Dieta</span>
+            <span><i class="far fa-folder mr-2"></i>Bébidas</span>
+        </section>
+
+        <button class="btn-more" id="abrirfo"><i class="fas fa-ellipsis-h"></i>Más</button>
+    </nav>
+
+
+    
+</header>
