@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {ScriptManagerMenusFormService} from './script-manager-menus-form.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,7 +24,8 @@ import { CirculosUserComponent } from './perfil-usuario/circulos-user/circulos-u
 import { PerfilRestauranteComponent } from './perfil-restaurante/perfil-restaurante.component';
 import { InfoCuentaRestaComponent } from './perfil-restaurante/info-cuenta-resta/info-cuenta-resta.component';
 import { SucursalesComponent } from './perfil-restaurante/sucursales/sucursales.component';
-import {CuponComponent} from './cupon/cupon.component'
+import {CuponComponent} from './cupon/cupon.component';
+import { MenusFormulariosComponent } from './menus-formularios/menus-formularios.component'
 
 const appRouter:Routes=[
   {path:'home',component:HomeComponent},
@@ -61,6 +63,7 @@ const appRouter:Routes=[
     InfoCuentaRestaComponent,
     SucursalesComponent,
     CuponComponent,
+    MenusFormulariosComponent,
  
  
   ],
@@ -70,7 +73,7 @@ const appRouter:Routes=[
     RouterModule,
     RouterModule.forRoot(appRouter)
   ],
-  providers: [],
+  providers: [ScriptManagerMenusFormService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
