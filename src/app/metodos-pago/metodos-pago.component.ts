@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./metodos-pago.component.css']
 })
 export class MetodosPagoComponent implements OnInit {
-
+ 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
+
 
 }

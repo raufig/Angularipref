@@ -1,0 +1,74 @@
+  /* footer */
+  footer{
+    position:absolute;
+    background: rgb(212, 212, 212);
+    top: 0;
+    height: 967px;
+    transition: .4s all;
+    text-align: center;
+    padding: 10px 20px 90px 30px; 
+    width: 245px;
+    left: -245px;
+    z-index:2;
+   
+    
+  } 
+  footer .cerrar{
+    font-size: 26px;
+    text-align: end;
+    margin-bottom: 40px;
+  }
+  
+  footer .cerrar-sesion i{
+    margin-left: 4px;
+    margin-bottom: 25px;
+  }
+  footer .nosotros,.terminos{
+    margin: 10px 0 50px 0;
+  }
+  footer a{
+    display: block;
+    margin: 12px 0px;
+    text-align: start;
+    font-size: 13px;
+    color: #707070;
+    transition: .4s all;
+    position: relative;
+  } 
+  footer a:hover{
+    text-decoration: none;
+    color: #3d3d3d;
+  } 
+  
+  footer .pronto{
+    background: black;
+    width: 90px;
+    height: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 30px;
+  
+   
+  }
+  
+  footer .redes{margin: 30px 0;display: flex;justify-content: space-between;}
+  footer .redes i{
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    transition: .4s all;
+  }
+  footer .redes i:hover{
+    color: #3a9691;
+  }
+  footer .copyright{
+    font-size: 10px;
+    margin: 2px 0;
+    
+  }
