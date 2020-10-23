@@ -1,8 +1,9 @@
 <app-tarjeta-perfil-global></app-tarjeta-perfil-global>
+<div id="camiCrud"><app-crear-plato></app-crear-plato></div>
 <div class="menuPrincipal container">
     <div class="circles d-flex flex-column justify-content-center align-items-center">
-        <span class="fas fa-plus fa-2x"></span>
-        <span class="text-center">Nuevo</span>
+        <i class="fas fa-plus"></i>
+        <span class="text-center" (click)="showformCrud()">Nuevo</span>
     </div>
 
     <div class="Titulo container d-flex justify-content-center">
@@ -13,36 +14,44 @@
 
 
     <div class="d-flex justify-content-center">
-        <div class="menu-card">
-            <div class="menu-card-image">
-                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        <div class="row">
+            <div class="col">
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </div>
+                    <div class="food-card-content">
+                        <div class="tittle-card">
+                            <h3>patatas geniales</h3>
+                        </div>
+                        <div class="TiempoPreparacion">
+                            <p>tiempo Preparacion: 38 minutos</p>
+                        </div>
+                        <div class="descipcion-card">
+                            <p> Descripcion: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo suscipit, minus neque
+                            tempore eaque qui</p>
+                            
+                        </div>
+                        <div class="menu-botones d-flex justify-content-center align-items-center">
+                            <div>
+                                <button class="b-edit" (click)="showformCrud()">editar</button>
+                            </div>
+                            <div>
+                                <button class="b-elim">Eliminar</button>
+                            </div>
+                            <div>
+                                <button class="b-dupl" (click)="showformCrud()">Duplicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="food-card-content">
-                <div class="tittle-card">
-                    <h3>patatas geniales</h3>
-                </div>
-                <div class="TiempoPreparacion">
-                    <p>tiempo Preparacion: 38 minutos</p>
-                </div>
-                <div class="descipcion-card">
-                    <p> Descripcion: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo suscipit, minus neque
-                    tempore eaque qui</p>
-                    
-                </div>
-                <div class="menu-botones d-flex justify-content-center align-items-center">
-                    <div>
-                        <button class="b-edit">editar</button>
-                    </div>
-                    <div>
-                        <button class="b-elim">Eliminar</button>
-                    </div>
-                    <div>
-                        <button class="b-dupl">Duplicar</button>
-                    </div>
-                </div>
+            
             </div>
         </div>
-    </div>
+
+        
+        
 
 
 

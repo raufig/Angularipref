@@ -1,0 +1,163 @@
+
+.cont-imagen {
+  position: absolute;
+  top: -180px;
+  left: 100px;
+  width: 300px;
+  height: 220px;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 3px 16px 37px -6px rgba(0,0,0,0.75);
+  overflow: hidden;
+  border-radius: 5px;
+}
+.cont-imagen img {
+  width: 100%;
+  height: 100%;
+}
+
+.cont-imagen>input[type="file"] {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.crud-ingredientes {
+  position: relative;
+  width: 500px;
+  border: 1px solid #ccc;
+  padding: 70px 16px;
+  margin: 250px auto;
+  border-radius: 10px;
+  background: white;
+}
+.form-grupo > input {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 4px 6px;
+  border-radius: 3px;
+}
+.form-grupo > textarea {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 4px 6px;
+  border-radius: 3px;
+  min-width: 300px;
+  min-height: 60px;
+  margin: 0px;
+  resize: none;
+}
+.form-grupo > label {
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+}
+.grupo-ingresar-ingrediente {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 20px 0;
+}
+.grupo-ingresar-ingrediente > .fa-plus {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 100%;
+  padding-top: 8px;
+  padding-left: 8px;
+  font-size: 16px;
+  position: relative;
+  left: 10px;
+  top: 4px;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.grupo-ingresar-ingrediente > .fa-plus:active {
+  transform: scale(0.98);
+}
+.grupo-ingresar-ingrediente > input {
+  padding: 6px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.botones-ingredientes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  padding: 5px;
+}
+.botones-ingredientes > button {
+  width: 120px;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 14px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.botones-ingredientes > button:focus {
+  outline: none;
+}
+.botones-ingredientes > button:active {
+  transform: scale(0.98);
+}
+.botones-ingredientes > button:hover {
+  opacity: 0.8;
+}
+.btn-eli {
+  background-color: rgb(192, 6, 6);
+}
+.btn-cre {
+  background-color: green;
+}
+.btn-edi {
+  background-color: orange;
+}
+.tabla-listado,
+.tabla-listado tr,
+.tabla-listado td,
+.tabla-listado th {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+.tabla-listado {
+  margin: 20px 0;
+  width: 300px;
+  text-align: center;
+  border-radius: 4px;
+}
+.tabla-listado td,
+.tabla-listado th {
+  padding: 2px;
+}
+.tabla-listado .fa-trash {
+  color: rgb(148, 24, 24);
+  cursor: pointer;
+  font-size: 14px;
+  cursor: pointer;
+}
+.grupo-tiempo {
+  width: 140px;
+}
+.grupo-tiempo > input {
+  border: 1px solid #ccc;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+.grupo-tiempo > label {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+

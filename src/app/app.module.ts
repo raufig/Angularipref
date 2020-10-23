@@ -16,7 +16,6 @@ import { FilaOrdenComponent } from './mesas-restaurante/fila-orden/fila-orden.co
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CardTendenciaComponent } from './dashboard/card-tendencia/card-tendencia.component';
 import { CardUltimasOrdenesComponent } from './dashboard/card-ultimas-ordenes/card-ultimas-ordenes.component';
-import { FilaEstadoOrdenComponent } from './dashboard/fila-estado-orden/fila-estado-orden.component';
 import { MetodosPagoComponent } from './metodos-pago/metodos-pago.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 import { InfoCuentaUserComponent } from './perfil-usuario/info-cuenta-user/info-cuenta-user.component';
@@ -27,7 +26,7 @@ import { SucursalesComponent } from './perfil-restaurante/sucursales/sucursales.
 import {CuponComponent} from './cupon/cupon.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
-import { MenuFormularioComponent } from './Menu/menu-formulario/menu-formulario.component'
+import { CrearPlatoComponent } from './menu/crear-plato/crear-plato.component'
 
 
 const appRouter:Routes=[
@@ -39,6 +38,8 @@ const appRouter:Routes=[
   {path: 'cupon', component: CuponComponent},
   {path: 'perfilUsuario', component: PerfilUsuarioComponent},
   {path: 'perfilRestaurante', component: PerfilRestauranteComponent},
+  {path: 'crearPlato', component: CrearPlatoComponent},
+  {path: 'menu', component: MenuComponent},
 ]
 
 
@@ -57,7 +58,6 @@ const appRouter:Routes=[
     DashboardComponent,
     CardTendenciaComponent,
     CardUltimasOrdenesComponent,
-    FilaEstadoOrdenComponent,
     MetodosPagoComponent,
     PerfilUsuarioComponent,
     InfoCuentaUserComponent,
@@ -69,7 +69,8 @@ const appRouter:Routes=[
     footerYMenu,
     FooterComponent,
     MenuComponent,
-    MenuFormularioComponent,
+    CrearPlatoComponent,
+    
 
  
  

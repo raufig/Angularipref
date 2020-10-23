@@ -11,5 +11,9 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  showformCrud(){
+    document.getElementById('camiCrud').style.top="60px"
+  }
 
 }
