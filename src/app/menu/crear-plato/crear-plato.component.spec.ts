@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuFormularioComponent } from './menu-formulario.component';
+import { CrearPlatoComponent } from './crear-plato.component';
 
-describe('MenuFormularioComponent', () => {
-  let component: MenuFormularioComponent;
-  let fixture: ComponentFixture<MenuFormularioComponent>;
+describe('CrearPlatoComponent', () => {
+  let component: CrearPlatoComponent;
+  let fixture: ComponentFixture<CrearPlatoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MenuFormularioComponent ]
+      declarations: [ CrearPlatoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MenuFormularioComponent);
+    fixture = TestBed.createComponent(CrearPlatoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
