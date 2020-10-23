@@ -1,0 +1,142 @@
+ <main id="main" class="w-100">
+        <!-- tarjeta usuario -->
+        <section class="infoUser d-flex">
+            <span class="perfilRestaurante">
+                <div class="form-group img-info-perfil">
+                    <div class="editprofile">
+                        <img id="blah" src="../../assets/img/home/crepes.png">
+                        <div class="overlay">
+                        <input id="imgInp" type="file">
+                        <p class="fas fa-camera fa-3x"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-perfil">
+                    <h2 class="nombreUser" id="nombreUser">Crepes & waffles</h2>
+                    <p class="js-toggle" data-container="toggle-1">Naturalmente trabajando, artesanalmente produciendo, saludablemente complaciendo
+                    </p>
+                   
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-pinterest-p"></a>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fas fa-globe-europe"></a>
+                <i>Ciudad</i>, <i>Departamento</i>, <i>País</i>
+            </div>
+            </span>
+            <span id="botonAddPlato" class="nuevoPlato">
+                <i class="fas fa-plus"> </i>
+           <p class="textoBoton">
+                Nuevo <br>
+                Plato
+           </p>    
+
+            </span>
+            <div id="formularioAddPlato" class="formAdicionarPlato">
+                <div class="tituloForm">
+                    <h3 >Agregar o crear producto</h3>
+                </div>
+                <!-- Formulario, imagen y tiempo de cocción -->
+                <div class="formImg">
+                    <!-- Formulario para agregar ingredientes -->
+                    <form action="" class="formularioPlatoDatos">
+                        <div class="inputs">
+                            <label for="NombrePlato">Nombre del plato</label>
+                            <input type="text" name="NombrePlato" id="NombrePlato">
+                        </div>
+                        <div class="inputs">
+                            <label for="ingredientes">Ingredientes</label>
+                            <input type="text" name="ingredientes" id="ingredientes">
+                            <i id="adicionarPlato" class="fas fa-plus-circle"></i>
+                        </div>
+                        <div id= "ingredientesAgregados">
+                            
+                        </div>
+                        
+                    </form>
+                    <!-- imagen y tiempo de cocción -->
+                    <div class="ImgPlato">
+                        <img src="../../assets/img/home/logoblanco.png" alt="imagenPlato">
+                        <button type="button">Subir imagen</button>
+                        <label for="tiempoCoccion">Tiempo de cocción</label>
+                        <input type="text" name="tiempoCoccion" id="tiempoCoccion">
+                    </div>
+                </div>
+
+                <!-- Botones de corregir guardar y cancelar -->
+                <div class="botonesForm">
+                    <button id="corregir" type="button">Corregir</button>
+                    <button id="guardar" type="button">Guardar</button>
+                    <button id="cancelar" type="button">Cancelar</button>
+                </div>
+                
+            </div>
+            
+        </section>
+        <section>
+            <div>
+                <h4 class="tituloPlatos">Pitas</h4>
+                <div id="grillaPlatos" class="grillaPlatos">
+                    <div class="cardPlato">
+                       <div class="cardPlatoImg">
+
+                        </div>
+                        <div class="cardTexto">
+                            <h5 >Nombre del plato</h5>
+                            <h6>Tiempo de cocción</h6>
+                            <div>
+                                <button id="botonEditar" type="button">Editar</button>
+                                <button id="botonEliminar" type="button">Eliminar</button>
+                                <button id="botonDuplicar" type="button">Duplicar</button>
+                            </div>
+                            
+                        </div>
+                    </div> 
+                   
+                </div>
+            </div>
+             <div>
+                <h4 class="tituloPlatos">Sopas</h4>
+                <div class="grillaPlatos">
+                    <div class="cardPlato">
+                          <div class="cardPlatoImg">
+
+                        </div>
+                        <div class="cardTexto">
+                            <h5>Nombre del plato</h5>
+                            <h6>Tiempo de cocción</h6>
+                            <div>
+                                <button id="botonEditar" type="button">Editar</button>
+                                <button id="botonEliminar" type="button">Eliminar</button>
+                                <button id="botonDuplicar" type="button">Duplicar</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+             <div>
+                <h4 class="tituloPlatos">Otra cosa</h4>
+                <div class="grillaPlatos">
+                    <div class="cardPlato">
+                        <div class="cardPlatoImg">
+
+                        </div>
+                       
+                        <div class="cardTexto">
+                            <h5>Nombre del plato</h5>
+                            <h6>Tiempo de cocción</h6>
+                            <div>
+                                <button id="botonEditar" type="button">Editar</button>
+                                <button id="botonEliminar" type="button">Eliminar</button>
+                                <button id="botonDuplicar" type="button">Duplicar</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+        </section>
+       
+    </main>

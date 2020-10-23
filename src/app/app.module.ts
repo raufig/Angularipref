@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {ScriptManagerMenusFormService} from './script-manager-menus-form.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ import {CuponComponent} from './cupon/cupon.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuFormularioComponent } from './Menu/menu-formulario/menu-formulario.component'
+
 
 const appRouter:Routes=[
   {path:'home',component:HomeComponent},
@@ -64,9 +66,11 @@ const appRouter:Routes=[
     InfoCuentaRestaComponent,
     SucursalesComponent,
     CuponComponent,
+    footerYMenu,
     FooterComponent,
     MenuComponent,
     MenuFormularioComponent,
+
  
  
   ],
@@ -76,7 +80,7 @@ const appRouter:Routes=[
     RouterModule,
     RouterModule.forRoot(appRouter)
   ],
-  providers: [],
+  providers: [ScriptManagerMenusFormService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
