@@ -1,0 +1,310 @@
+*{
+    padding: 0px;
+    margin: 0px;
+  
+  }
+  :root{
+      --fondoGris:#999999;
+      --verdeBoton: #028E35;
+      --rojoBoton:#E21B1B;
+      --azulBoton: #1BC6CC;
+      --adicionarPlato: #6BB0AD;
+      --borderAdicionarPlato:#DADADA;
+      --letraNegra: #000000;
+      --fondoBlancoForm: rgb(255, 255, 255);
+  }
+  
+  /*--------------------informacion usuario--------------------*/
+  .perfilRestaurante{
+    display: flex;
+    width: 450px;
+    }
+  .nuevoPlato{
+    border: solid 5px #DADADA;
+    padding: 20px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #6BB0AD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+  }
+  .textoBoton{
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+  }
+  .formularioPlatoDatos{
+    display: flex;
+    flex-direction: column;
+  }
+  .infoUser{
+      margin-top: 50px ;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-right: 0px;
+      position: relative;
+    }
+    .formAdicionarPlato{
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 1s ease;
+      background-color: rgb(255, 255, 255);
+      border: solid 1px #DADADA;
+      border-radius: 10px;
+      top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .inputs{
+    display: flex;
+    justify-content: space-around;
+    margin: 3px 5px;
+    align-items: center;
+  }
+  .inputs i{
+    cursor: pointer;
+  }
+  .inputs input{
+    border-radius: 10px;
+    margin: 0px 5px;
+  }
+  .formImg{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+  }
+  .formImg div img{
+    width: 100px;
+    background-color: #000000;
+    /* border-radius: 10px; */
+  }
+  .ImgPlato{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin: 0px 10px;
+    align-items: center;
+  }
+  .ImgPlato button{
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  .tituloForm{
+    background-color: #999999;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+   }
+   .botonesForm{
+     margin: 30px 0px;
+   }
+   .botonesForm button{
+     border-radius: 10px;
+   }
+   .botonesForm #corregir{
+     background-color: #1BC6CC;
+   }
+   .botonesForm #guardar{
+     background-color: #028E35;
+   }
+   .botonesForm #cancelar{
+     background-color: #E21B1B;
+   }
+
+
+
+  main>.infoUser .img-info-perfil>.editprofile{
+      width: 100px;
+      margin: 20px auto;
+      max-width: 200px;
+      position: relative;
+      border-radius: 50%;
+  }
+  
+    .editprofile:hover .overlay {
+      background-color: rgba(0, 0, 0, 0.397);
+    }
+    .editprofile:hover .overlay p {
+      display: block;
+      width: 100px;
+    }
+    .editprofile img {
+      width: 100%;
+      border-radius: 50%;
+      height: auto;
+    }
+    .editprofile .overlay {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      overflow: hidden;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .editprofile .overlay input {
+      width: 100%;
+      position: absolute;
+      opacity: 0;
+      bottom: 20px;
+      z-index: 2;
+      cursor: pointer;
+    }
+    .editprofile .overlay p {
+      position: absolute;
+      bottom: 10px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      width: 100px;
+      display: none;
+    }
+    .editprofile .overlay p i{
+        width: 100px;
+    }
+  
+  main>.infoUser .info-perfil{
+      margin-left: 20px;
+  }
+  main>.infoUser .info-perfil>p{
+      color: #707070;
+      /* cursor: pointer; */
+      }
+  main>.infoUser .info-perfil>a{
+      color: #707070;
+    }
+  /*--------------------------SlideToggle----------------------------*/
+  
+  
+    
+  main>.infoUser .info-perfil>p>i{
+  margin-left: 80px;
+  
+  }
+  main>.infoUser .info-perfil>.toggle-container{
+      transition: height 0.35s ease-in-out;
+      overflow: hidden;
+  
+  }
+  main>.infoUser .info-perfil>.toggle-container>input{
+      border: none;
+      border-bottom: 2px solid  #707070;
+  }
+  
+  main>.infoUser .info-perfil>.toggle-container:not(.active) {
+      display: none;
+    }
+  
+    /* ------------------secondNAV----------------- */
+  
+    section>.second-Nav{
+      width: 500px;
+      margin-left: 250px;
+    }
+    section>.second-Nav>a{
+      color: #707070;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    section>.second-Nav>.active{
+      
+      border-bottom: 4px solid rgb(16, 230, 219);
+      padding-bottom: 5px;
+    
+    }
+  
+    /*Section de platos*/
+    .tituloPlatos{
+        background-color: #999999;
+        text-align: center;
+        margin:10px 0px ;
+    }
+    .cardPlato{
+        border: solid 1px;
+        border-radius: 10px;
+        display: flex;
+        padding: 0px 10px 0px 0px;
+        margin: 5px;
+    }
+    /* .cardPlato img{
+        margin-right: 3px;
+        border: 5px solid;
+        max-width: 100%;
+        border-radius: 10px 0px 0px 10px;
+    } */
+    .cardPlatoImg{
+      background-image: url("../../assets/img/home/Plato01.png");
+      background-repeat: no-repeat;
+      background-size: 170px 170px;
+      background-position: center;
+      margin-right: 3px;
+      border: 1px solid;
+      width:120px;
+      /* max-width: 150%; */
+      border-radius: 10px 0px 0px 10px;
+      
+
+    }
+
+  .cardTexto{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+  
+  .cardTexto div{
+      display: flex;
+      flex-wrap: wrap;
+      width: 150px;
+      justify-content: center;
+  }
+  .cardTexto button{
+      margin: 5px;
+      border-radius: 5px;
+      padding: 1px 3px;
+      transition: border-radius 1s ease, background-color 1s ease-in-out;
+
+  }
+  .cardTexto #botonEditar{
+      background-color:rgb(8, 158, 20);
+      color: white;
+      border: none;
+  }
+
+  .cardTexto #botonEditar:hover{
+      background-color:rgb(9, 187, 23) ;
+      border-radius: 12px;
+  }
+
+  .cardTexto #botonEliminar{
+      background-color: rgb(231, 97, 20);
+      color: white;
+      border: none;
+  }
+
+  .cardTexto #botonEliminar:hover{
+      background-color: red;
+      border-radius: 12px;
+
+  }
+  .cardTexto #botonDuplicar{
+      background-color:  rgb(100, 152, 187);
+      color: white;
+      border: none;
+  }
+  .cardTexto #botonDuplicar:hover{
+      background-color:  rgb(103, 168, 211);
+      border-radius: 12px;
+  }
+  .grillaPlatos{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
