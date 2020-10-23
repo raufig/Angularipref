@@ -1,0 +1,126 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.Titulo{
+    width: 1000px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #999999;
+    
+    
+    
+}
+.Titulo>p{
+    font-size: 35px;
+    font: bold;
+    color: white;
+    padding-bottom: 80px;
+}
+
+/* cartas */
+
+
+.circles{
+    position: relative;
+    left: 85%;
+    width: 80px;
+    height: 80px;
+    border: 4px solid rgba(38, 195, 195, 0.849);
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+
+  
+  .menu-card {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    background: transparent;
+    
+  }
+  .menu-card-image {
+    position: relative;
+    top: 20%;
+    left: -15%;
+    width: 40%;
+    height: 40%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #ffffff45;
+    box-shadow: 0 0 10px 2px #00000045;
+    z-index: 5;
+  }
+  .menu-card-image > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
+  }
+  .food-card-content {
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px #00000045;
+    background: whitesmoke;
+  }
+  
+  
+  .tittle-card{
+      top: 5%;
+      margin-left: 30%;
+  }
+  .TiempoPreparacion{
+    margin-left: 30%;
+  }
+  .descipcion-card{
+    margin-left: 30%; 
+  }
+ 
+  .menu-botones {
+    position: absolute;
+    left: 50%;
+    bottom: -32%;
+    transform: translate(-50%, -105%);
+    z-index: 7;
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+    
+  }
+  .menu-botones > div {
+      
+    width: auto;
+    padding: 0 10px;
+    
+  }
+  .menu-botones > div > button {
+      
+    width: 80px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 90px;
+    height: 28px;
+    font-weight: bold;
+  }
+  .b-edit{
+    background: rgb(103, 168, 211);  
+  }
+.b-elim{
+    background: red;
+}
+.b-dupl{
+    background: rgb(9, 187, 23);
+}
+  
+  

@@ -10,6 +10,8 @@ export class CuponComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
 
 }

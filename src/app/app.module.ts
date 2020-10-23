@@ -25,7 +25,10 @@ import { PerfilRestauranteComponent } from './perfil-restaurante/perfil-restaura
 import { InfoCuentaRestaComponent } from './perfil-restaurante/info-cuenta-resta/info-cuenta-resta.component';
 import { SucursalesComponent } from './perfil-restaurante/sucursales/sucursales.component';
 import {CuponComponent} from './cupon/cupon.component';
-import { MenusFormulariosComponent } from './menus-formularios/menus-formularios.component'
+import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
+import { MenuFormularioComponent } from './Menu/menu-formulario/menu-formulario.component'
+
 
 const appRouter:Routes=[
   {path:'home',component:HomeComponent},
@@ -63,7 +66,11 @@ const appRouter:Routes=[
     InfoCuentaRestaComponent,
     SucursalesComponent,
     CuponComponent,
-    MenusFormulariosComponent,
+    footerYMenu,
+    FooterComponent,
+    MenuComponent,
+    MenuFormularioComponent,
+
  
  
   ],
