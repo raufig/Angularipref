@@ -1,9 +1,9 @@
 
-                <div class="tarjeta-ultimas d-flex ">
-                    <img src="../img/carrousel/german.jpg" alt="imagen-orden">
+                <div class="tarjeta-ultimas d-flex " *ngFor='let data of tarjetaOrd'>
+                    <img src={{data.img}} alt="imagen-orden">
                     <div>
-                      <h3>Hamburguesa</h3>
-                      <p>La mejor hamburguesa de la sabana de occidente <i class="fas fa-bell"></i></p>
+                      <h3>{{data.Producto}}</h3>
+                      <p>{{data.Descripcion}} <i class="fas fa-bell"></i></p>
                     </div>
-                    <p class="precio-orden-tarjeta">$5.600</p>
+                    <p class="precio-orden-tarjeta">{{data.Precio}}</p>
                 </div>

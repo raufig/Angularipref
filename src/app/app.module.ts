@@ -66,7 +66,7 @@ const appRouter:Routes=[
     InfoCuentaRestaComponent,
     SucursalesComponent,
     CuponComponent,
-    footerYMenu,
+    // footerYMenu,
     FooterComponent,
     MenuComponent,
     CrearPlatoComponent,
