@@ -7,7 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TarjetaOrdenComponent implements OnInit {
 
-  constructor() { }
+  public tarjetaOrd: object[];
+
+  constructor() {
+    this.tarjetaOrd = [{
+      img: "../../../assets/img/home/german.jpg",
+      Producto: "Hamburguesa",
+      Descripcion: "La mejor hamburguesa de la sabana de occidente",
+      Precio: "$30.600"
+    },
+    {
+      img: "../../../assets/img/home/jamon01.png",
+      Producto: "Caserola de papas",
+      Descripcion: "La mejor combinacion papas, con tocineta y queso derretido",
+      Precio: "$12.000"
+    },
+    
+  ]
+   }
 
   ngOnInit(): void {
   }
