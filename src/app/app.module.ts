@@ -26,7 +26,9 @@ import { SucursalesComponent } from './perfil-restaurante/sucursales/sucursales.
 import {CuponComponent} from './cupon/cupon.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
-import { CrearPlatoComponent } from './menu/crear-plato/crear-plato.component'
+import { CrearPlatoComponent } from './menu/crear-plato/crear-plato.component';
+import { PreferenciasUsuarioComponent } from './preferencias-usuario/preferencias-usuario.component';
+import { HeaderPrefUsuarioComponent } from './preferencias-usuario/header-pref-usuario/header-pref-usuario.component'
 
 
 const appRouter:Routes=[
@@ -40,6 +42,7 @@ const appRouter:Routes=[
   {path: 'perfilRestaurante', component: PerfilRestauranteComponent},
   {path: 'crearPlato', component: CrearPlatoComponent},
   {path: 'menu', component: MenuComponent},
+  {path: 'prefUsuario', component: PreferenciasUsuarioComponent},
 ]
 
 
@@ -70,6 +73,8 @@ const appRouter:Routes=[
     FooterComponent,
     MenuComponent,
     CrearPlatoComponent,
+    PreferenciasUsuarioComponent,
+    HeaderPrefUsuarioComponent,
     
 
  
