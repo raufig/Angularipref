@@ -28,18 +28,23 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { CrearPlatoComponent } from './menu/crear-plato/crear-plato.component';
 import { PreferenciasUsuarioComponent } from './preferencias-usuario/preferencias-usuario.component';
-import { HeaderPrefUsuarioComponent } from './preferencias-usuario/header-pref-usuario/header-pref-usuario.component'
+import { HeaderPrefUsuarioComponent } from './preferencias-usuario/header-pref-usuario/header-pref-usuario.component';
+import { IndexIprefComponent } from './index-ipref/index-ipref.component';
+import { FormularioPersonaComponent } from './index-ipref/formulario-persona/formulario-persona.component';
+import { FormularioEmpresaComponent } from './index-ipref/formulario-empresa/formulario-empresa.component';
+import { HeaderRestauranteComponent } from './header-restaurante/header-restaurante.component'
 
 
 const appRouter:Routes=[
+  {path:'',component:IndexIprefComponent},
   {path:'home',component:HomeComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'ordenes', component: OrdenesComponent},
   {path: 'mesas', component: MesasRestauranteComponent},
   {path: 'metodos-pago', component: MetodosPagoComponent},
   {path: 'cupon', component: CuponComponent},
-  {path: 'perfilUsuario', component: PerfilUsuarioComponent},
-  {path: 'perfilRestaurante', component: PerfilRestauranteComponent},
+  {path: 'perfil-usuario', component: PerfilUsuarioComponent},
+  {path: 'perfil-restaurante', component: PerfilRestauranteComponent},
   {path: 'crearPlato', component: CrearPlatoComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'prefUsuario', component: PreferenciasUsuarioComponent},
@@ -75,6 +80,10 @@ const appRouter:Routes=[
     CrearPlatoComponent,
     PreferenciasUsuarioComponent,
     HeaderPrefUsuarioComponent,
+    IndexIprefComponent,
+    FormularioPersonaComponent,
+    FormularioEmpresaComponent,
+    HeaderRestauranteComponent,
     
 
  

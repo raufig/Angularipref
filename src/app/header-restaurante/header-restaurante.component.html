@@ -1,0 +1,69 @@
+<header class="d-flex justify-content-between">
+    
+    <div class="cont-menu" >
+        <span><i class="fas fa-bars mr-3 pt-1" id="icono-navres" (click)='desplegar()'></i></span>
+    </div>
+
+    <img class="logo-negro mb-1"  routerLink='home' src="../../assets/img/home/logo-negro.png" alt="logo-ipref">
+
+   
+
+    <div class="ubicacion-perfil">
+        <small id="btn-cerrar">X</small>
+        <span><i class="fas fa-map-marker-alt "></i></span>     
+        <img class="img-usuario" src="../../assets/img/home/perfil.jpg" alt="imagen-usuario">
+    </div>
+
+
+     <nav id="navres" (click)="ocultar()">
+        <img class="logo-bienvenida"  src="../../assets/img/home/logo-negro.png" alt="logo-ipref">
+        <hr>
+        <img class="img-usuario" src="../../assets/img/home/crepes.png" alt="imagen-usuario">
+        <p class="nombre-usuario">Bienvenido Crepes & Wafles</p>
+
+         <div class="sub-menu">
+
+           <div class="my-3"  >
+               <img src="../../assets/img/home/estadisticas.png" id="estadisticas" (click)='mostrarOpciones()'>
+               <div class="opciones-menu " id="opciones-estadisticas">
+                 <img src="../../assets/img/home/silla.png" alt="">
+                 <p>Mesas</p>
+                 <img src="../../assets/img/home/grafico.png" alt="">
+                 <p>Datos</p>
+                 <img src="../../assets/img/home/reportes.png" alt="">
+                 <p>Reportes</p>
+               </div>
+            </div> 
+            <p class="opc-pri-dash">Estadisticas</p>
+
+            <img src="../../assets/img/home/menu.png" class="my-3" >
+            <p class="opc-pri-dash">Menú</p>
+
+     
+            <div  class=" my-3"  >
+              <img src="../../assets/img/home/shop.png" id="perfil" >
+              <div class="opciones-menu " id="opciones-perfil">
+                <img src="../../assets/img/home/silla.png" alt="">
+                <p>Mesas</p>
+                <img src="../../assets/img/home/grafico.png" alt="">
+                <p>Datos</p>
+              </div>
+           </div> 
+             <p class="opc-pri-dash">Perfil</p>
+
+             
+
+             <img src="../../assets/img/home/ordenes.png" class="my-3" >
+             <p class="opc-pri-dash">Ordenes</p>
+
+
+        </div> 
+       
+
+
+        <button class="btn-more" id="abrirfo"><i class="fas fa-ellipsis-h"></i>Más</button>
+    </nav> 
+
+
+
+</header>
