@@ -1,15 +1,15 @@
 <section class="AcocountSettings">
     <h3>Informacion de cuenta</h3>
     <div class="AccounsInputs d-flex justify-content-around">
-    <div class="toggle-container" id="toggle-1">
-      <input type="text" placeholder="correoAndres@mail.com" />
+    <div class="toggle-container" id="toggle-1" *ngFor='let data of InfoUser'>
+      <input type="text" placeholder={{data.correo}} />
       <small id="HelpInline" class="text-muted fas fa-pencil-alt">
          
       </small><br/>
       <p>Correo</p>
     </div>
-    <div class="toggle-container" id="toggle-1">
-      <input type="password" placeholder="Crear Contraseña" />
+    <div class="toggle-container" id="toggle-1" *ngFor='let data of InfoUser'>
+      <input type="password" placeholder="{{data.contrasena}}" />
       <small id="HelpInline" class="text-muted fas fa-pencil-alt">
         
       </small><br/>
