@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  public imagenesCarousel: String[];
+  public imagenesCarousel:String[];
 
 
   constructor() {
@@ -33,6 +33,10 @@ export class HomeComponent implements OnInit {
    /*  document.getElementById('carousel').innerHTML+=html; */
     return html;
   } 
+
+ 
+
+
 
 
 }
