@@ -7,8 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TarjetaEstadoComponent implements OnInit {
 
-  constructor() { }
-
+  public tarjetaEst: object[];
+  
+  constructor() { 
+    this.tarjetaEst = [{
+      Cliente: "Andres",
+      Producto: "Hamburguesa",
+      Estado: "Cancelado",
+      Tiempo: "10:30 a.m",
+      Total: "$ 30.000"
+    },
+    {
+      Cliente: "Juan",
+      Producto: "Ensalada",
+      Estado: "Entregado",
+      Tiempo: "01:30 p.m",
+      Total: "$ 20.000"
+    },
+  ]
+  }
+ 
   ngOnInit(): void {
   }
 

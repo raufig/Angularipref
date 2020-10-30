@@ -1,7 +1,7 @@
-<div class="tabla-body d-flex">
-    <p>Andrés</p>
-    <p>Hamburguesa</p>
-    <p>Cancelado</p>
-    <p>10:30 a.m</p>
-    <p>$ 30.000</p>
+<div class="tabla-body d-flex" *ngFor='let data of tarjetaEst'>
+    <p>{{data.Cliente}}</p>
+    <p>{{data.Producto}}</p>
+    <p>{{data.Estado}}</p>
+    <p>{{data.Tiempo}}</p>
+    <p>{{data.Total}}</p>
 </div>
