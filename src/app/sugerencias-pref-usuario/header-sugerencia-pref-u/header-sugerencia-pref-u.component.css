@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.shop-b {
+    padding: 20px 80px 0 0;
+    position: relative;
+}
+
+img {
+    height: auto;
+    width: 35px;
+    margin-right: 10px;
+}
+
+.qauntityShop {
+    background-color: rgba(38, 195, 195);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    padding-left: 5px;
+    position: absolute;
+}
+.procesoComp {
+    padding: 0 60px 5px 0;
+}
+
+.procesoComp h6 {
+    font-size: smaller;
+}
+.welcome h3{
+    margin: 10px 0 5px 80px;
+}
+
+.welcome h6{
+    margin: 0 0  15px 80px;
+}
+
+.todoMenu {
+    margin-left: 50px;
+    margin-right: 90px;
+    margin-top: -10px;
+    border-style: solid;
+    border-color: rgba(38, 195, 195);
+    border-radius: 60px;
+    width: 90px;
+    height: 90px;
+    /* position: absolute; */
+    position: absolute;
+}
+.todoMenu h6 {
+    padding-top: 20px;
+}
+.sugUsuario {
+    margin-top: 70px;
+}
