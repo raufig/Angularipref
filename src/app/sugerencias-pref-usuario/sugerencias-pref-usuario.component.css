@@ -1,0 +1,133 @@
+.menu-card {
+    margin-top: 200px;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: transparent;
+}
+
+.menu-card-image {
+    position: relative;
+    top: -50%;
+    left: 10%;
+    width: 80%;
+    height: 45%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px #00000045;
+    z-index: 5;
+}
+
+.menu-card-image>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 120%;
+    width: auto;
+}
+
+.food-card-content {
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px #00000045;
+    background: whitesmoke;
+    padding-top: 60px;
+}
+.starRating{
+    font-size: 25px;
+    color: rgba(103, 168, 211, 0.253);
+    margin-bottom: 5px;
+}
+
+.checked {
+    color: rgb(103, 168, 211);
+}
+
+.tittle-card {
+    margin-bottom: 6px;
+    margin-left: 10px;
+}
+
+.descipcion-card {
+    margin-left: 5%;
+    margin-right: 5%;
+} 
+
+.descipcion-card p{
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.precio {
+    margin-bottom: 8px;
+}
+
+.alignAddSub {
+    color: rgb(103, 168, 211);
+}
+
+.quantPrefs{
+    padding-top: 5px;
+}
+
+.mas-info h6{
+    font-size: smaller;
+    color: rgb(103, 168, 211);
+    margin-right: 20px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    /* padding-top: 15px; */
+}
+.menu-botones {
+    position: absolute;
+    left: 50%;
+    bottom: -32%;
+    transform: translate(-50%, -105%);
+    z-index: 7;
+    width: auto;
+    height: 55px;
+    border-radius: 5px;
+}
+
+.menu-botones>div {
+    width: auto;
+    padding: 0 10px;
+}
+
+.menu-botones>div>button {
+    width: 80px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 90px;
+    height: 28px;
+    font-weight: bold;
+}
+
+.botonNota {
+    background: rgb(103, 168, 211);
+}
+
+.botonAgregar {
+    background: rgb(9, 187, 23);
+}
+
+.botonCancelar {
+    background: red;
+}
+
+
+
+#camiCrud {
+    position: absolute;
+    left: 37%;
+    z-index: 10000;
+    top: -900px;
+    transition: 0.4s all;
+}
