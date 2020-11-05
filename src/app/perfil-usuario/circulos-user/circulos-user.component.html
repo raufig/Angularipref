@@ -33,33 +33,30 @@
       <div class="arrow"></div>
       <div class="d-flex justify-content-between sectionGender">
       <div
-        class="circles d-flex flex-column justify-content-center align-items-center">
-        <span class="fas fa-venus fa-2x"></span>
-        <span class="text-center">Femenino</span>
+        class="circles d-flex flex-column justify-content-center align-items-center" *ngFor="let gender of genero; index as i">
+        <span class="{{gender.icon}} fa-2x"></span>
+        <span class="text-center">{{gender.nombre}}</span>
       </div>
-      <div
-        class="circles d-flex flex-column justify-content-center align-items-center">
-        <span class="fas fa-venus fa-2x"></span>
-        <span class="text-center">Masculino</span>
-      </div>
-      <div
-        class="circles d-flex flex-column justify-content-center align-items-center">
-        <span class="fas fa-venus fa-2x"></span>
-        <span class="text-center">Otro</span>
-      </div>
+
     </div>
     </div>
 
 
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#headingTwo">
         <div class="arrow2"></div>
-        <div class="d-flex justify-content-between sectionPrefer">
+        
+        <div class="sectionPrefer" >
         <div
-          class="circles d-flex flex-column justify-content-center align-items-center">
-          <span class="far fa-smile-wink fa-2x"></span>
-          <span class="text-center">PrimeraPreferencia</span>
+          class="circles d-flex flex-column justify-content-center align-items-center" *ngFor="let pref of prefer; index as i">
+          <span class="">{{pref.icon}}</span>
+          <span class="text-center">{{pref.nombre}}</span>
         </div>
-
+        <div
+          class="circles d-flex flex-column justify-content-center align-items-center" >
+          <span class="fa fa-plus"></span>
+          <span class="text-center">nuevo</span>
+        </div>
       </div>
+    
       </div>
   </div>

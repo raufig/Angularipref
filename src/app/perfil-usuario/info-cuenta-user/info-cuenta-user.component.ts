@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info-cuenta-user.component.css']
 })
 export class InfoCuentaUserComponent implements OnInit {
-
-  constructor() { }
+  public InfoUser: object[];
+  constructor() { 
+    this.InfoUser = [{
+      correo: "correoAndres@mail.com",
+      contrasena: "123456789",
+    },
+    ]}
 
   ngOnInit(): void {
   }
