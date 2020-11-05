@@ -4,7 +4,7 @@
 
 <main class="container">
       <app-tarjeta-perfil-global></app-tarjeta-perfil-global>
- 
+ <app-formulario-mesas></app-formulario-mesas>
         <section class="col-12 d-flex flex-column d-lg-flex flex-lg-row mt-4 ">
           <div class="container d-md-flex flex-md-row d-flex justify-content-around ">
                 <div class="container col-lg-6 col-md-6 p-2 m-1  d-flex justify-content-around boxContent">
@@ -72,7 +72,7 @@
                   </div>
                     <div class="mrImgInfo m-0 p-0 d-flex justify-content-around">
                       <div class=" position-relative" *ngFor='let pedido of pedidos'>
-                        <p class="mrCentNUm position-absolute">2</p>
+                        <p class="mrCentNUm position-absolute">{{pedido}}</p>
                         <img src="../../assets/img/home/restaurant.png" alt="">
                       </div>
                     </div>

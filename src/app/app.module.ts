@@ -28,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { CrearPlatoComponent } from './menu/crear-plato/crear-plato.component';
 import { PreferenciasUsuarioComponent } from './preferencias-usuario/preferencias-usuario.component';
-import { HeaderPrefUsuarioComponent } from './preferencias-usuario/header-pref-usuario/header-pref-usuario.component'
+import { HeaderPrefUsuarioComponent } from './preferencias-usuario/header-pref-usuario/header-pref-usuario.component';
+import { FormularioMesasComponent } from './mesas-restaurante/formulario-mesas/formulario-mesas.component'
 
 
 const appRouter:Routes=[
@@ -43,6 +44,7 @@ const appRouter:Routes=[
   {path: 'crearPlato', component: CrearPlatoComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'prefUsuario', component: PreferenciasUsuarioComponent},
+  {path:'formularioMesas', component: FormularioMesasComponent}
 ]
 
 
@@ -75,6 +77,7 @@ const appRouter:Routes=[
     CrearPlatoComponent,
     PreferenciasUsuarioComponent,
     HeaderPrefUsuarioComponent,
+    FormularioMesasComponent,
     
 
  

@@ -2,7 +2,12 @@
   /*--------------------informacion usuario--------------------*/
   .infoUser{
     margin: 50px 0 0 100px;
+    /* position: relative; */
 }
+/* .contenedorFormulario{
+  position: absolute;
+  top: 0px;
+} */
 
 .infoUser>.img-info-perfil>.editprofile{
     width: 100px;

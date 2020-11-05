@@ -1,0 +1,37 @@
+<!-- <div class="cont-imagen">
+  <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      alt="foto-perfil" id="imgp">
+  <input type="file" id="input-foto" onChange="mostrarImagen(this)">
+</div> -->
+<div class="contenedorFormulario" id="contenedorFormulario">
+<div class="crud-ingredientes">
+
+  <div class="form-grupo">
+    <input type="text"  required />
+    <label>Estado orden</label>
+  </div>
+  
+  <div class="form-grupo">
+    <input type="text" required />
+    <label>Tiempo (entrega)</label>
+  </div>
+  <div class="form-grupo">
+    <input type="text" required />
+    <label>Tiempo de preparación</label>
+  </div>
+ 
+
+  <table class="tabla-listado mt-5">
+    
+
+    <tbody id="tabla"></tbody>
+  </table>
+
+  <div class="botones-ingredientes">
+    <button class="btn-edi">Limpiar</button>
+    <button class="btn-eli"(click) = "ocultarFormulario()">Cancelar</button>
+    <button class="btn-cre">Crear</button>
+  </div>
+</div>
+</div>
+

@@ -13,23 +13,22 @@
 
 
 
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center" *ngFor="let plato of arregloMenu">
         <div class="row">
             <div class="col">
                 <div class="menu-card">
                     <div class="menu-card-image">
-                        <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                        <img src={{plato.imagen}}>
                     </div>
                     <div class="food-card-content">
                         <div class="tittle-card">
-                            <h3>patatas geniales</h3>
+                            <h3>{{plato.nombre}}</h3>
                         </div>
                         <div class="TiempoPreparacion">
-                            <p>tiempo Preparacion: 38 minutos</p>
+                            <p>tiempo Preparacion: {{plato.tiempo}} minutos</p>
                         </div>
                         <div class="descipcion-card">
-                            <p> Descripcion: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo suscipit, minus neque
-                            tempore eaque qui</p>
+                            <p> Descripcion: {{plato.descripcion}}</p>
                             
                         </div>
                         <div class="menu-botones d-flex justify-content-center align-items-center">
