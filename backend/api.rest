@@ -1,0 +1,27 @@
+###
+GET http://localhost:3000/api/user
+
+###
+POST http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+    "docu": "101010",
+    "name": "user1",
+     "lastN": "apell1",
+    "email": "email2@mail.com",
+    "addr": "calle falsa 123",
+    "phone": "123456",
+    "passw": "pasword",
+    "userId": "user001",
+    "birDate": "12/12/2020"
+}
+
+###
+POST http://localhost:3000/api/user/loginU
+Content-Type: application/json
+
+{
+    "email": "email2@mail.com",
+    "passw": "pasword"
+}
