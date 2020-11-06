@@ -51,7 +51,7 @@ const appRouter:Routes=[
   {path: 'crearPlato', component: CrearPlatoComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'prefUsuario', component: PreferenciasUsuarioComponent},
-  {path:'formularioMesas', component: FormularioMesasComponent}
+  {path:'formularioMesas', component: FormularioMesasComponent},
   {path: 'sugUsuario', component: SugerenciasPrefUsuarioComponent},
 ]
 
@@ -84,16 +84,12 @@ const appRouter:Routes=[
     CrearPlatoComponent,
     PreferenciasUsuarioComponent,
     HeaderPrefUsuarioComponent,
-<<<<<<< HEAD
-    FormularioMesasComponent,
-=======
     IndexIprefComponent,
     FormularioPersonaComponent,
     FormularioEmpresaComponent,
     HeaderRestauranteComponent,
     SugerenciasPrefUsuarioComponent,
     HeaderSugerenciaPrefUComponent,
->>>>>>> 1a1a9ce3aba6ea561e15b2616eef5522e4c0c4f9
     
 
  
