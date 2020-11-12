@@ -89,11 +89,7 @@ const appRouter:Routes=[
     FormularioEmpresaComponent,
     HeaderRestauranteComponent,
     SugerenciasPrefUsuarioComponent,
-    HeaderSugerenciaPrefUComponent,
-    
-
- 
- 
+    HeaderSugerenciaPrefUComponent, 
   ],
   imports: [
     BrowserModule,
