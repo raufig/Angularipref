@@ -1,4 +1,5 @@
 const jwt = require("jsonwebtoken");
+
 function auth(req, res, next) {
   let jwtToken = req.header("Authorization");
   jwtToken = jwtToken.split(" ")[1];
@@ -11,4 +12,6 @@ function auth(req, res, next) {
     res.status(400).send("invalid token, without authorization to process");
   }
 }
+
+
 module.exports = auth;

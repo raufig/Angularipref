@@ -12,12 +12,15 @@ const schemaUser = new mongoose.Schema(
     passw: { type: String, required: true },
     userId: { type: String, required: true },
     birDate: { type: String},
+    
   },
   {
     timestamps: true,
     versionKey: false,
   }
 );
+
+
 
 schemaUser.methods.generateJWT = function () {
   return jwt.sign(
