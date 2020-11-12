@@ -9,7 +9,7 @@ Content-Type: application/json
     "docu": "101010",
     "name": "user1",
      "lastN": "apell1",
-    "email": "email2@mail.com",
+    "email": "email1@mail.com",
     "addr": "calle falsa 123",
     "phone": "123456",
     "passw": "pasword",
@@ -22,6 +22,19 @@ POST http://localhost:3000/api/user/loginU
 Content-Type: application/json
 
 {
-    "email": "email2@mail.com",
+    "email": "email1@mail.com",
     "passw": "pasword"
 }
+######
+GET  http://localhost:3000/api/user/welcome
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFiMTcyMDAyNzMzMjM0ZDBmZGVhZWMiLCJkb2N1IjoiMTAxMDEwIiwibmFtZSI6InVzZXIxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUwNTkzNTB9.5-OuiV631smTu3XWwfHnbR9Pu-zr260QVJ-ezK4Qn1M
+
+
+###
+GET   http://localhost:3000/api/user/tmp
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmE1ODYwYWU4MmY2NzM4ZjQ3MGU1NTEiLCJkb2N1IjoiMTAxMDEwIiwibmFtZSI6InVzZXIxIiwiZW1haWwiOiJlbWFpbDJAbWFpbC5jb20iLCJpYXQiOjE2MDUwMzkwMTN9.-bdEtQff3f5mLY3IsKVtHY7-I4D4BUNHRkI90WPWcYw
+
+
+
+###
