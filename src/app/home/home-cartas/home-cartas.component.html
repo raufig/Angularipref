@@ -1,0 +1,37 @@
+<main class='w-100'>
+<!-- cartas -->
+<section class="cartas-menu border" id="cartas">
+    <div class="cont-cartas-general d-flex justify-content-between"  >
+        <h1 class="tm">Solo para ti</h1>
+
+        
+        <div class="carta-home" *ngFor=" let restaurante of restaurantes; index as i">
+            <div class="carta-head-home" style="background-image: url({{restaurante.imagen}})">
+                <span class="categoria">{{restaurante.nombre}}</span>
+              <div class="sombra-body">
+                   <small>{{restaurante.descripcion}}</small>
+              </div>
+            </div>
+            <div class="carta-body-home d-flex">
+                <div class="nombre-cart-body">
+                  <p>{{restaurante.nombre}}</p>
+
+                  <!-- <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> -->
+                    <div class="starRating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="nombre-establecimiento">
+                    <img src="../img/carrousel/german.jpg" alt="">
+                </div>
+            </div>
+         </div>
+
+
+    </div>
+</section>
+</main>

@@ -35,7 +35,8 @@ import { FormularioPersonaComponent } from './index-ipref/formulario-persona/for
 import { FormularioEmpresaComponent } from './index-ipref/formulario-empresa/formulario-empresa.component';
 import { HeaderRestauranteComponent } from './header-restaurante/header-restaurante.component';
 import { SugerenciasPrefUsuarioComponent } from './sugerencias-pref-usuario/sugerencias-pref-usuario.component';
-import { HeaderSugerenciaPrefUComponent } from './sugerencias-pref-usuario/header-sugerencia-pref-u/header-sugerencia-pref-u.component'
+import { HeaderSugerenciaPrefUComponent } from './sugerencias-pref-usuario/header-sugerencia-pref-u/header-sugerencia-pref-u.component';
+import { HomeCartasComponent } from './home/home-cartas/home-cartas.component'
 
 
 const appRouter:Routes=[
@@ -89,7 +90,8 @@ const appRouter:Routes=[
     FormularioEmpresaComponent,
     HeaderRestauranteComponent,
     SugerenciasPrefUsuarioComponent,
-    HeaderSugerenciaPrefUComponent, 
+    HeaderSugerenciaPrefUComponent,
+    HomeCartasComponent, 
   ],
   imports: [
     BrowserModule,
