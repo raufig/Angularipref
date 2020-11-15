@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {ScriptManagerMenusFormService} from './script-manager-menus-form.service';
+import { RouterModule, Routes } from '@angular/router';
+import { ScriptManagerMenusFormService } from './script-manager-menus-form.service';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from './service/auth.service';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,40 +26,37 @@ import { CirculosUserComponent } from './perfil-usuario/circulos-user/circulos-u
 import { PerfilRestauranteComponent } from './perfil-restaurante/perfil-restaurante.component';
 import { InfoCuentaRestaComponent } from './perfil-restaurante/info-cuenta-resta/info-cuenta-resta.component';
 import { SucursalesComponent } from './perfil-restaurante/sucursales/sucursales.component';
-import {CuponComponent} from './cupon/cupon.component';
+import { CuponComponent } from './cupon/cupon.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { CrearPlatoComponent } from './menu/crear-plato/crear-plato.component';
 import { PreferenciasUsuarioComponent } from './preferencias-usuario/preferencias-usuario.component';
 import { HeaderPrefUsuarioComponent } from './preferencias-usuario/header-pref-usuario/header-pref-usuario.component';
-import { FormularioMesasComponent } from './mesas-restaurante/formulario-mesas/formulario-mesas.component'
+import { FormularioMesasComponent } from './mesas-restaurante/formulario-mesas/formulario-mesas.component';
 import { IndexIprefComponent } from './index-ipref/index-ipref.component';
 import { FormularioPersonaComponent } from './index-ipref/formulario-persona/formulario-persona.component';
 import { FormularioEmpresaComponent } from './index-ipref/formulario-empresa/formulario-empresa.component';
 import { HeaderRestauranteComponent } from './header-restaurante/header-restaurante.component';
 import { SugerenciasPrefUsuarioComponent } from './sugerencias-pref-usuario/sugerencias-pref-usuario.component';
 import { HeaderSugerenciaPrefUComponent } from './sugerencias-pref-usuario/header-sugerencia-pref-u/header-sugerencia-pref-u.component';
-import { HomeCartasComponent } from './home/home-cartas/home-cartas.component'
+import { HomeCartasComponent } from './home/home-cartas/home-cartas.component';
 
-
-const appRouter:Routes=[
-  {path:'',component:IndexIprefComponent},
-  {path:'home',component:HomeComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'ordenes', component: OrdenesComponent},
-  {path: 'mesas', component: MesasRestauranteComponent},
-  {path: 'metodos-pago', component: MetodosPagoComponent},
-  {path: 'cupon', component: CuponComponent},
-  {path: 'perfil-usuario', component: PerfilUsuarioComponent},
-  {path: 'perfil-restaurante', component: PerfilRestauranteComponent},
-  {path: 'crearPlato', component: CrearPlatoComponent},
-  {path: 'menu', component: MenuComponent},
-  {path: 'prefUsuario', component: PreferenciasUsuarioComponent},
-  {path:'formularioMesas', component: FormularioMesasComponent},
-  {path: 'sugUsuario', component: SugerenciasPrefUsuarioComponent},
-]
-
-
+const appRouter: Routes = [
+  // {path:'',component:IndexIprefComponent},
+  // {path:'home',component:HomeComponent},
+  // {path: 'dashboard', component: DashboardComponent},
+  // {path: 'ordenes', component: OrdenesComponent},
+  // {path: 'mesas', component: MesasRestauranteComponent},
+  // {path: 'metodos-pago', component: MetodosPagoComponent},
+  // {path: 'cupon', component: CuponComponent},
+  // {path: 'perfil-usuario', component: PerfilUsuarioComponent},
+  // {path: 'perfil-restaurante', component: PerfilRestauranteComponent},
+  // {path: 'crearPlato', component: CrearPlatoComponent},
+  // {path: 'menu', component: MenuComponent},
+  // {path: 'prefUsuario', component: PreferenciasUsuarioComponent},
+  // {path:'formularioMesas', component: FormularioMesasComponent},
+  // {path: 'sugUsuario', component: SugerenciasPrefUsuarioComponent},
+];
 
 @NgModule({
   declarations: [
@@ -91,15 +91,19 @@ const appRouter:Routes=[
     HeaderRestauranteComponent,
     SugerenciasPrefUsuarioComponent,
     HeaderSugerenciaPrefUComponent,
-    HomeCartasComponent, 
+    HomeCartasComponent,
+    FormularioMesasComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(appRouter)
+    RouterModule.forRoot(appRouter),
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [ScriptManagerMenusFormService],
-  bootstrap: [AppComponent]
+  providers: [ScriptManagerMenusFormService, AuthService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
