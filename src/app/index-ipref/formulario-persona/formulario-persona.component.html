@@ -6,25 +6,25 @@
     </div>
    
     <div class="form-group">
-        <input required type="text" id="inombre">
+        <input [(ngModel)]="registrarUsuario.name" name="nombre" required type="text" id="inombre">
         <label id="nombre">Nombre</label>
         <i class="fas fa-user" id="iconombre"></i>
     </div>
 
     <div class="form-group">
-       <input required type="text" id="iapellido">
+       <input [(ngModel)]="registrarUsuario.lastN" name="Apellido" required type="text" id="iapellido">
         <label id="apellido">Apellido</label>
         <i class="fas fa-user" id="icoapellido"></i>
     </div>
 
     <div class="form-group">
-        <input required type="text" id="idireccion">
+        <input [(ngModel)]="registrarUsuario.addr" name="Direccion" required type="text" id="idireccion">
         <label id="direccion">Dirección</label>
         <i class="fas fa-map-signs" id="icodireccion"></i>
     </div>
 
     <div class="form-group">
-        <input required type="text" id="iemail">
+        <input [(ngModel)]="registrarUsuario.email" name="Email" required type="text" id="iemail">
         <label id="email">Email</label>
         <i class="fas fa-envelope" id="icoemail"></i>
         
@@ -32,19 +32,19 @@
     </div>
 
     <div class="form-group">
-        <input required type="password"  >
+        <input [(ngModel)]="registrarUsuario.passw" name="Contraseña" required type="password"  >
         <label id="contraseña">Contraseña</label>
         <i class="fas fa-key" id="iconocontraseña"></i>
     </div>
 
     <div class="form-group">
-        <input required type="password" >
+        <input [(ngModel)]="registrarUsuario.passw" name="RepetirContr" required type="password" >
         <label id="contraseña2">Repetir contraseña</label>
         <i class="fas fa-unlock" id="iconosubir"></i>
     </div>
 
     <div class="form-group">
-      <input required type="password">
+      <input [(ngModel)]="registrarUsuario.phone" name="Telefono" required type="password">
       <label id="contraseña2">Teléfono</label>
       <i class="fas fa-phone-square-alt"></i>
   </div>
@@ -59,13 +59,13 @@
 </div>
   
 <div class="form-group g1">
-    <input required type="text" id="init" >
+    <input [(ngModel)]="registrarUsuario.docu" name="DocIdentidad" required type="text" id="init" >
     <label id="nit">Documento de identidad</label>
     <i class="fas fa-id-badge"></i>
  </div>
 
 
-    <button>Registrar</button>
+    <button (click)="registrarUs()">Registrar</button>
 
     <div class="sk-chase" id="spinner">
         <div class="sk-chase-dot"></div>

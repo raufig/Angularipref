@@ -4,25 +4,25 @@
     </div>
    
     <div class="form-group">
-        <input required type="text" id="inombre">
+        <input [(ngModel)]="registrarRestaurante.name" name="Name" required type="text" id="inombre">
         <label id="nombre">Nombre</label>
         <i class="fas fa-user" id="iconombre"></i>
     </div>
   
     <div class="form-group">
-       <input required type="text" id="iapellido">
+       <input [(ngModel)]="registrarRestaurante.raSocial" name="RaSocial" required type="text" id="iapellido">
         <label id="apellido">Razón social</label>
         <i class="fas fa-user" id="icoapellido"></i>
     </div>
   
     <div class="form-group">
-        <input required type="text" id="idireccion">
+        <input [(ngModel)]="registrarRestaurante.addr" name="Direccion" required type="text" id="idireccion">
         <label id="direccion">Dirección</label>
         <i class="fas fa-map-signs" id="icodireccion"></i>
     </div>
   
     <div class="form-group">
-        <input required type="text" id="iemail">
+        <input [(ngModel)]="registrarRestaurante.email" name="Email" required type="text" id="iemail">
         <label id="email">Email</label>
         <i class="fas fa-envelope" id="icoemail"></i>
         
@@ -30,25 +30,25 @@
     </div>
   
     <div class="form-group">
-        <input required type="password"  >
+        <input [(ngModel)]="registrarRestaurante.passw" name="contraseña" required type="password"  >
         <label id="contraseña">Contraseña</label>
         <i class="fas fa-key" id="iconocontraseña"></i>
     </div>
   
     <div class="form-group">
-        <input required type="password" >
+        <input [(ngModel)]="registrarRestaurante.passw" name="contraseña2" required type="password" >
         <label id="contraseña2">Repetir contraseña</label>
         <i class="fas fa-unlock" id="iconosubir"></i>
     </div>
   
     <div class="form-group">
-      <input required type="password">
+      <input [(ngModel)]="registrarRestaurante.phone" name="Telefono" required type="password">
       <label id="contraseña2">Teléfono</label>
       <i class="fas fa-phone-square-alt"></i>
   </div>
   
   
-    <button>Registrar</button>
+    <button (click)="registrarRes()">Registrar</button>
   
     <div class="sk-chase" id="spinner">
         <div class="sk-chase-dot"></div>
