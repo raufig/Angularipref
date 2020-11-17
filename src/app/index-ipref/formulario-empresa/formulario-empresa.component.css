@@ -3,12 +3,12 @@
     width: 400px;
     background: #d1d1b477;
     background: #fff;
-     padding: 35px 20px; 
+      padding: 25px 20px; 
     border-radius: 8px;
     text-align: center;
     position: absolute;
     right: 30px;
-    top: 80px;
+    top: 95px;
  } 
  
  .form-registro input{
@@ -153,3 +153,123 @@
     width: 700px;
     margin-top: 20px;
  }
+
+/* Estilos del boton de ingresar */
+
+header{
+   padding: 20px 30px 0 60px;  
+   display: flex;
+   justify-content: space-between;
+} 
+
+ header button{
+   width: 200px;
+   padding: 8px 10px;
+   font-size: 16px;
+   height: 40px;
+   margin-top: 10px;
+   color: #fff;
+   background: transparent;
+   border: none;
+   border: 1px solid #fff;
+   cursor: pointer;
+   transition: .4s all linear;
+   
+}
+header button:focus{
+    outline: none;
+}
+header button:active{
+   transform: scale(.98);
+
+}
+
+/* Formato login */
+.login-ingresar{
+   width: 300px;
+   margin-left: 40%; 
+   position: absolute;
+   border-radius: 6px;
+   padding: 20px 10px;
+   transition:2s all;
+   background: #d1d1b477;
+    background: #fff;
+   font-family: 'Open Sans';
+   font-size: 16px;
+   top: -350px;
+   
+}
+
+.icono-formulario-ingreso{
+ background-color: rgba(0, 0, 0, 1);
+ width: 60px;
+ height: 60px;
+ position: relative;
+ margin: auto;
+ border-radius: 100%;
+ text-align: center;
+ bottom: 44px;
+ padding-bottom: 4px;
+
+
+}
+.icono-formulario-ingreso i{
+ margin: auto;
+ font-size: 32px;
+ color: #fff;
+}
+.login-ingresar p{
+ font-weight: 600;
+ font-size: 22px;
+ font-weight: 00;
+ margin-top: -34px;
+ text-align: center;
+ color: rgba(0, 0, 0, .7);
+
+
+}
+
+.login-ingresar input{
+ width: 95%;
+ background: transparent;
+ border: none;
+ border-bottom: 1px solid #d1d1b477; 
+ margin-bottom: 20px;
+ font-family: 'Open Sans';
+}
+
+.login-ingresar input::-webkit-input-placeholder { color: rgba(0, 0, 0, .5); }  
+.login-ingresar input:focus, button:focus{
+ outline: none;
+}
+.login-ingresar button:active{
+ transform: scale(.97);
+}
+.login-ingresar input{
+font-size: 16px;
+font-family: 'Open Sans';
+}
+.login-ingresar button{
+ width: 95%;
+ border: none;
+ background: #000;
+ color: #fff;
+ padding: 6px 12px;
+ border-radius: 4px;
+ font-weight: 300;
+ margin: auto;
+ display: block;
+ transition: .4s all;
+}
+.recordarme{
+width: 90px;
+}
+.recordarme{
+font-size: 11px;
+text-align: start;
+font-weight: 600;
+cursor: pointer;
+}
+.entrar{
+   cursor: pointer;
+   }

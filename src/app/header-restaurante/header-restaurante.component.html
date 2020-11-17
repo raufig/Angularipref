@@ -24,24 +24,24 @@
          <div class="sub-menu">
 
            <div class="my-3"  >
-               <img src="../../assets/img/home/estadisticas.png" id="estadisticas" (click)='mostrarOpciones()'>
+               <img src="../../assets/img/home/estadisticas.png" id="estadisticas" (click)="mostrarOpciones()">
                <div class="opciones-menu " id="opciones-estadisticas">
-                 <img src="../../assets/img/home/silla.png" alt="">
-                 <p>Mesas</p>
-                 <img src="../../assets/img/home/grafico.png" alt="">
-                 <p>Datos</p>
+                 <img routerLink="/mesas" src="../../assets/img/home/silla.png" alt="">
+                 <p routerLink="/mesas">Mesas</p>
+                 <img routerLink="/dashboard" src="../../assets/img/home/grafico.png" alt="">
+                 <p routerLink="/dashboard"> Datos</p>
                  <img src="../../assets/img/home/reportes.png" alt="">
                  <p>Reportes</p>
                </div>
-            </div> 
+          </div> 
             <p class="opc-pri-dash">Estadisticas</p>
 
-            <img src="../../assets/img/home/menu.png" class="my-3" >
-            <p class="opc-pri-dash">Menú</p>
+            <img routerLink="/menu" src="../../assets/img/home/menu.png" class="my-3" >
+            <p routerLink="/menu" class="opc-pri-dash">Menú</p>
 
      
             <div  class=" my-3"  >
-              <img src="../../assets/img/home/shop.png" id="perfil" >
+              <img routerLink="/perfil-restaurante" src="../../assets/img/home/shop.png" id="perfil" >
               <div class="opciones-menu " id="opciones-perfil">
                 <img src="../../assets/img/home/silla.png" alt="">
                 <p>Mesas</p>
@@ -49,12 +49,12 @@
                 <p>Datos</p>
               </div>
            </div> 
-             <p class="opc-pri-dash">Perfil</p>
+             <p routerLink="/perfil-restaurante" class="opc-pri-dash">Perfil</p>
 
              
 
-             <img src="../../assets/img/home/ordenes.png" class="my-3" >
-             <p class="opc-pri-dash">Ordenes</p>
+             <img routerLink="/ordenes" src="../../assets/img/home/ordenes.png" class="my-3" >
+             <p routerLink="/ordenes" class="opc-pri-dash">Ordenes</p>
 
 
         </div> 

@@ -14,11 +14,18 @@ export class HeaderRestauranteComponent implements OnInit {
   desplegar(){
     document.getElementById('navres').style.left='0px';
   }
-   ocultar(){
+  ocultar(){
     document.getElementById('navres').style.left='-245px';
   } 
+  // mostrarOpciones(){
+  //   document.getElementById('opciones-estadisticas').style.left='0px';
+  //  console.log("entro")
+  // }
+
   mostrarOpciones(){
-    document.getElementById('navres').style.left='0px';
-   
-  }
+    document.getElementById('opciones-estadisticas').style.opacity='1';
+    document.getElementById('opciones-estadisticas').style.backgroundColor='white';
+}
+
+
 }

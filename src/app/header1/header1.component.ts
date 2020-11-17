@@ -21,7 +21,7 @@ export class Header1Component implements OnInit {
     document.getElementById('nav').style.left='-245px';
   }
   openFooter(){
-    document.getElementById('footer').style.left='0px';
+    document.getElementById('footer').style.left='20px';
   }
 
 }

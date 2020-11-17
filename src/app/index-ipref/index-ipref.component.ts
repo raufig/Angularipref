@@ -12,4 +12,5 @@ export class IndexIprefComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }

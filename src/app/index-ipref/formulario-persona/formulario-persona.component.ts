@@ -22,6 +22,12 @@ export class FormularioPersonaComponent implements OnInit {
     birDate: '',
   };
 
+  logearUsuario = {
+    email: '',
+    passw: '',
+  };
+
+
   ngOnInit(): void {}
 
   registrarUs() {
@@ -32,4 +38,26 @@ export class FormularioPersonaComponent implements OnInit {
       (err) => console.log(err)
     );
   }
+  
+  loginUs() {
+    this.auth.loginUsuario(this.logearUsuario).subscribe(
+      (res) => {
+        console.log(res);
+      },
+      (err) => console.log(err)
+    );
+  }
+
+
+  showInput(){
+    
+    const loginIngresarctual = document.getElementById('login-ingresar');
+    const formRegistro = document.getElementById('formulario');
+
+      loginIngresarctual.style.top='100px'
+      formRegistro.style.backgroundColor='#d1d1b477'
+
+        
+  };
+ 
 }

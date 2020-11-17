@@ -20,7 +20,7 @@ const routes: Routes = [
   
   {
     path:'',component:IndexIprefComponent,
-    pathMatch: 'full',
+    // pathMatch: 'full',
   },
   {
     path:'home',component:HomeComponent

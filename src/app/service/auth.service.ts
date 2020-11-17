@@ -7,11 +7,11 @@ import { HttpClient } from '@angular/common/http'
 export class AuthService {
 
   private registroUrlUsuario = 'http://localhost:3000/api/user/';
-  private loginUrlUsuario = 'http://localhost:3000/api/loginU';
+  private loginUrlUsuario = 'http://localhost:3000/api/user/loginU';
 
   // Incluir variables para el restaurante
   private registroUrlRestaurante = 'http://localhost:3000/api/rest/';
-  private loginUrlRestaurante = 'http://localhost:3000/api/loginR';
+  private loginUrlRestaurante = 'http://localhost:3000/api/rest/LoginR';
 
   constructor(private http: HttpClient) { }
 

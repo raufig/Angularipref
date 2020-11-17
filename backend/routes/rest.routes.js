@@ -5,6 +5,6 @@ const router = Router();
 router.get('/', restCtrl.getRests);
 router.post('/', restCtrl.createRest);
 
-router.get('/LoginR', restCtrl.authRest);
+router.post('/LoginR', restCtrl.authRest);
 
 module.exports = router; 
