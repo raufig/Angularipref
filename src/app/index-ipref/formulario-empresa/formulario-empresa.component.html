@@ -1,6 +1,38 @@
+<!-- Boton de Ingresar-->
+<header>
+    <a href='#miModal'></a><button id="btn-ingresar" (click)='showInput()'>Ingresar</button>
+</header>
+
+<!-- Modal de LOGIN -->
+<form action="#" class="login-ingresar" id="login-ingresar">
+
+    <div class="icono-formulario-ingreso d-flex align-items-center text-center"><i class="fas fa-user"></i></div>
+    <p>Ingresar</p>
+
+    <div class="form-froup d-flex mb-2">
+        <i class="fas fa-user mr-2 pt-1"></i>
+        <input [(ngModel)]="logearRestaurante.email" name="Email" type="text" placeholder="Usuario">
+    </div>
+
+    <div class="form-froup d-flex mb-2">
+        <i class="fas fa-lock  mr-2 pt-1"></i>
+        <input [(ngModel)]="logearRestaurante.passw" name="Password" type="password" placeholder="Contraseña">
+    </div>
+    <button (click)="loginRes()" class="entrar">Entrar</button>
+    <div class="form-froup d-flex justify-content-between mt-3 ">
+        <div class="cont-recordar d-flex">
+            <input type="checkbox">
+            <small class="recordarme">Recordarme</small>
+
+        </div>
+        <small class="recordarme w-50">¿Olvidaste la contraseña?</small>
+    </div>
+</form>
+
+
 <form class="form-registro" id="formulario">
     <div class="texto-registrar">
-        <p class="mb-4">Regístrate</p><span>x</span>
+        <p class="mb-4">Regístrate</p>
     </div>
    
     <div class="form-group">

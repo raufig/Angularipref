@@ -23,6 +23,11 @@ export class FormularioEmpresaComponent implements OnInit {
     restId: '',
   };
 
+  logearRestaurante = {
+    email: '',
+    passw: '',
+  };
+
   ngOnInit(): void {}
 
   registrarRes() {
@@ -33,6 +38,25 @@ export class FormularioEmpresaComponent implements OnInit {
       (err) => console.log(err)
     );
   }
+
+  loginRes() {
+    this.auth.loginRestaurante(this.logearRestaurante).subscribe(
+      (res) => {
+        console.log(res);
+      },
+      (err) => console.log(err)
+    );
+  }
+
+
+  showInput(){
+
+    const loginIngresarctual = document.getElementById('login-ingresar');
+    const formRegistro = document.getElementById('formulario');
+
+      loginIngresarctual.style.top='100px'
+      formRegistro.style.backgroundColor='#d1d1b477'
+  };
 }
 
 

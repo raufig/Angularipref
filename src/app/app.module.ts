@@ -41,22 +41,22 @@ import { SugerenciasPrefUsuarioComponent } from './sugerencias-pref-usuario/suge
 import { HeaderSugerenciaPrefUComponent } from './sugerencias-pref-usuario/header-sugerencia-pref-u/header-sugerencia-pref-u.component';
 import { HomeCartasComponent } from './home/home-cartas/home-cartas.component';
 
-const appRouter: Routes = [
-  // {path:'',component:IndexIprefComponent},
-  // {path:'home',component:HomeComponent},
-  // {path: 'dashboard', component: DashboardComponent},
-  // {path: 'ordenes', component: OrdenesComponent},
-  // {path: 'mesas', component: MesasRestauranteComponent},
-  // {path: 'metodos-pago', component: MetodosPagoComponent},
-  // {path: 'cupon', component: CuponComponent},
-  // {path: 'perfil-usuario', component: PerfilUsuarioComponent},
-  // {path: 'perfil-restaurante', component: PerfilRestauranteComponent},
-  // {path: 'crearPlato', component: CrearPlatoComponent},
-  // {path: 'menu', component: MenuComponent},
-  // {path: 'prefUsuario', component: PreferenciasUsuarioComponent},
-  // {path:'formularioMesas', component: FormularioMesasComponent},
-  // {path: 'sugUsuario', component: SugerenciasPrefUsuarioComponent},
-];
+// const appRouter: Routes = [
+//   {path:'',component:IndexIprefComponent},
+//   {path:'home',component:HomeComponent},
+//   {path: 'dashboard', component: DashboardComponent},
+//   {path: 'ordenes', component: OrdenesComponent},
+//   {path: 'mesas', component: MesasRestauranteComponent},
+//   {path: 'metodos-pago', component: MetodosPagoComponent},
+//   {path: 'cupon', component: CuponComponent},
+//   {path: 'perfil-usuario', component: PerfilUsuarioComponent},
+//   {path: 'perfil-restaurante', component: PerfilRestauranteComponent},
+//   {path: 'crearPlato', component: CrearPlatoComponent},
+//   {path: 'menu', component: MenuComponent},
+//   {path: 'prefUsuario', component: PreferenciasUsuarioComponent},
+//   {path:'formularioMesas', component: FormularioMesasComponent},
+//   {path: 'sugUsuario', component: SugerenciasPrefUsuarioComponent},
+// ];
 
 @NgModule({
   declarations: [
@@ -98,7 +98,7 @@ const appRouter: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(appRouter),
+    // RouterModule.forRoot(appRouter),
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
