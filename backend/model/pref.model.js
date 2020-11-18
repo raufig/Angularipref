@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const { SubPref } = require("./subpref.model");
+
 
 const schemaPreferencia = new mongoose.Schema(
   {
@@ -21,6 +21,7 @@ const schemaSubPref = new mongoose.Schema(
     nombre: String,
     icon: String,
     ref_id: { type: Schema.Types.ObjectId, ref: 'preferencia' },
+    except: [{ type: Schema.Types.ObjectId, ref: 'GruposAlimenticio' }],
     
   },
   {

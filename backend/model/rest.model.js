@@ -9,7 +9,7 @@ const schemaRest = new mongoose.Schema({
   addr: String,
   phone: String,
   passw: {type: String, required: true},
-  restId: String,
+  img: { type: String, default: "http://localhost:3000/public/1605630079235-recurso-12.png" },
 },{
   timestamps: true
 });

@@ -1,26 +1,22 @@
 const { Router } = require('express');
 const userCtrl = require('../controllers/user.controller');
 const router = Router();
-const  auth  = require("../middleware/auth");
-
-const { User } = require("../model/user.model");
-const { Preferencia } = require("../model/pref.model");
-const { SubPrefe } = require("../model/pref.model");
-const { PrefUser } = require("../model/prefU.model");
+const  authU  = require("../middleware/authU");
+const uploadFile = require("../middleware/file");
 
 
-router.get('/', userCtrl.getUsers);
+
 router.post('/', userCtrl.createUser);
 router.post('/loginU', userCtrl.authUser);
-router.get('/welcome', auth, userCtrl.firstLogInUser);
-router.post('/welcome', auth, userCtrl.savePref );
+router.get('/welcome', authU, userCtrl.firstLogInUser);
+router.post('/welcome', authU, userCtrl.savePref );
+router.get('/home', authU, userCtrl.getRest);
+router.get("/menu-resta", authU, userCtrl.getMenuRest);
+router.post("/menu-resta", authU, userCtrl.createOrder);
+router.get("/edit-perfil", authU, userCtrl.getInfoUser);
+router.put("/edit-perfil", authU, uploadFile.single("img"),  userCtrl.editInfoUser);
 
-/* router.get('/', userCtrl.getUsers);
-router.post('/', userCtrl.createUser);
-router.get('/:id', userCtrl.getUser);
-router.put('/:id', userCtrl.editUser);
-router.delete('/', userCtrl.deleteUser);
-router.post('/loginU', userCtrl.authUser); */
+
 
 
 

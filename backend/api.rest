@@ -9,7 +9,7 @@ Content-Type: application/json
     "docu": "101010",
     "name": "user1",
      "lastN": "apell1",
-    "email": "email1@mail.com",
+    "email": "email9@mail.com",
     "addr": "calle falsa 123",
     "phone": "123456",
     "passw": "pasword",
@@ -22,7 +22,7 @@ POST http://localhost:3000/api/user/loginU
 Content-Type: application/json
 
 {
-    "email": "email1@mail.com",
+    "email": "email9@mail.com",
     "passw": "pasword"
 }
 ######
@@ -32,9 +32,209 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFiMTcyM
 
 
 ###
-GET   http://localhost:3000/api/user/tmp
+POST http://localhost:3000/api/user/welcome
+Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmE1ODYwYWU4MmY2NzM4ZjQ3MGU1NTEiLCJkb2N1IjoiMTAxMDEwIiwibmFtZSI6InVzZXIxIiwiZW1haWwiOiJlbWFpbDJAbWFpbC5jb20iLCJpYXQiOjE2MDUwMzkwMTN9.-bdEtQff3f5mLY3IsKVtHY7-I4D4BUNHRkI90WPWcYw
+
+{
+    
+    "pref1": ["5fad2f143165585fb8d00fae"],
+    "pref2": [
+            "5fad2ff63165585fb8d00fb3",
+            "5fad2ff63165585fb8d00fb2",
+            "5fad2ff63165585fb8d00fb3"
+        ]
+   
+  }
+
+
+###
+GET http://localhost:3000/api/user/home
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmE1ODYwYWU4MmY2NzM4ZjQ3MGU1NTEiLCJkb2N1IjoiMTAxMDEwIiwibmFtZSI6InVzZXIxIiwiZW1haWwiOiJlbWFpbDJAbWFpbC5jb20iLCJpYXQiOjE2MDUwMzkwMTN9.-bdEtQff3f5mLY3IsKVtHY7-I4D4BUNHRkI90WPWcYw
+
+###
+GET http://localhost:3000/api/user/menu-resta/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmE1ODYwYWU4MmY2NzM4ZjQ3MGU1NTEiLCJkb2N1IjoiMTAxMDEwIiwibmFtZSI6InVzZXIxIiwiZW1haWwiOiJlbWFpbDJAbWFpbC5jb20iLCJpYXQiOjE2MDUwMzkwMTN9.-bdEtQff3f5mLY3IsKVtHY7-I4D4BUNHRkI90WPWcYw
+
+{
+    "rest_id": "5fade27128474c0ab843ef9e"
+}
+
+###
+GET http://localhost:3000/api/user/edit-perfil
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmE1ODYwYWU4MmY2NzM4ZjQ3MGU1NTEiLCJkb2N1IjoiMTAxMDEwIiwibmFtZSI6InVzZXIxIiwiZW1haWwiOiJlbWFpbDJAbWFpbC5jb20iLCJpYXQiOjE2MDUwMzkwMTN9.-bdEtQff3f5mLY3IsKVtHY7-I4D4BUNHRkI90WPWcYw
+
+###
+PUT http://localhost:3000/api/user/edit-perfil
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmE1ODYwYWU4MmY2NzM4ZjQ3MGU1NTEiLCJkb2N1IjoiMTAxMDEwIiwibmFtZSI6InVzZXIxIiwiZW1haWwiOiJlbWFpbDJAbWFpbC5jb20iLCJpYXQiOjE2MDUwMzkwMTN9.-bdEtQff3f5mLY3IsKVtHY7-I4D4BUNHRkI90WPWcYw
+
+{
+    "name": "Raul",
+    "lastN": "Figueroa",
+    "img": "http://localhost:3000/public/1605630079235-recurso-12.png"
+}
+
+
+###
+POST http://localhost:3000/api/user/menu-resta
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmI1NDYyMTIzZDdkYzMyNDRhNTRkNDYiLCJkb2N1IjoiMTAxMDEwIiwibmFtZSI6InVzZXIxIiwiZW1haWwiOiJlbWFpbDlAbWFpbC5jb20iLCJpYXQiOjE2MDU3MTU0OTZ9.Q_lXrD2IdTCf4LBMJewcdOsE1jj0PhJMSqn3DUjBiCU
+
+{
+
+   "rest_id": "5fade27128474c0ab843ef9e",
+    "nombre_plato": "el Plato mas pro!",
+    "descrip_plato": "Este plato Es una chimba",
+    "contidad": 2,
+    "total_orden":30000
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 ###
+POST http://localhost:3000/api/rest
+Content-Type: application/json
+
+{
+    "nit": "1010101",
+    "name": "rest1",
+    "email": "email1@mail.com",
+    "raSocial": "venta de comida",
+    "addr": "calle falsa 1234",
+    "phone": "123456",
+    "passw": "pasword",
+    "restId": "user001"
+    
+}
+
+
+###
+POST http://localhost:3000/api/rest/loginR
+Content-Type: application/json
+
+{
+    "email": "email1@mail.com",
+    "passw": "pasword"
+}
+######
+GET  http://localhost:3000/api/rest/welcome
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
+
+
+###
+POST http://localhost:3000/api/rest/welcome
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
+
+{
+    
+    "pref1": ["5fad2f143165585fb8d00fae"],
+    "pref2": [
+            "5fad2ff63165585fb8d00fb3",
+            "5fad2ff63165585fb8d00fb2",
+            "5fad2ff63165585fb8d00fb3"
+        ]
+   
+  }
+
+
+###
+GET http://localhost:3000/api/rest/test
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmE1ODYwYWU4MmY2NzM4ZjQ3MGU1NTEiLCJkb2N1IjoiMTAxMDEwIiwibmFtZSI6InVzZXIxIiwiZW1haWwiOiJlbWFpbDJAbWFpbC5jb20iLCJpYXQiOjE2MDUwMzkwMTN9.-bdEtQff3f5mLY3IsKVtHY7-I4D4BUNHRkI90WPWcYw
+
+###
+
+POST http://localhost:3000/api/rest/crearPlato
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
+
+{
+    
+    "nombre": "Ultimo Plato!",
+    "categoria": "Pitas",
+    "descrip": "Este plato Es una chimba",
+    "tiempoPreparacion": 120,
+    "ingredientes": [
+        "5fa76efdc40c7c5219db5c2b",
+        "5fa76efdc40c7c5219db5c15",
+        "5fa76efdc40c7c5219db5c36",
+        "5fa76efdc40c7c5219db5c10",
+        "5fa76efdc40c7c5219db5c37",
+        "5fa76efdc40c7c5219db5c3b",
+        "5fa76efdc40c7c5219db5c1a",
+        "5fa76efdc40c7c5219db5c1e",
+        "5fa76efdc40c7c5219db5c22"
+],
+    "gruposAliment": [
+        "5fa76098c40c7c5219db5c08",
+        "5fa76098c40c7c5219db5c09",
+        "5fa76098c40c7c5219db5c0c",
+        "5fa76098c40c7c5219db5c0d",
+        "5fa76098c40c7c5219db5c0e"
+    ],
+    "precio": 15000
+}
+
+###
+GET http://localhost:3000/api/rest/MenuRestaurante
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
+###
+GET http://localhost:3000/api/rest/MenuRestaurante/5fb2f2ae8aa612431cc4ad09
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
+###
+PUT http://localhost:3000/api/rest/MenuRestaurante/5fb3ea889b7a840fb81e158b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
+
+{
+    
+    "nombre": "Ultimo Plato updated!",
+    "categoria": "nuevoooooo",
+    "descrip": "Este plato Es una chimbaaaa",
+    "tiempoPreparacion": 120,
+    "ingredientes": [
+        "5fa76efdc40c7c5219db5c2b",
+        "5fa76efdc40c7c5219db5c15",
+        "5fa76efdc40c7c5219db5c36",
+        "5fa76efdc40c7c5219db5c10",
+        "5fa76efdc40c7c5219db5c37",
+        "5fa76efdc40c7c5219db5c3b",
+        "5fa76efdc40c7c5219db5c1a",
+        "5fa76efdc40c7c5219db5c1e",
+        "5fa76efdc40c7c5219db5c22"
+],
+    "gruposAliment": [
+        "5fa76098c40c7c5219db5c08",
+        "5fa76098c40c7c5219db5c09",
+        "5fa76098c40c7c5219db5c0c",
+        "5fa76098c40c7c5219db5c0d",
+        "5fa76098c40c7c5219db5c0e"
+    ],
+    "precio": 15000,
+    "img": "http://localhost:3000/public/1605627120162-5bd3f920-fab1-49fa-a6f6-8782c5ccdb4c.jpg"
+}
+###
+DELETE http://localhost:3000/api/rest/MenuRestaurante/5fb2f2ae8aa612431cc4ad09
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
+
+
+###
+GET http://localhost:3000/api/rest/ordenes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
