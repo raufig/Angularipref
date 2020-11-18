@@ -34,6 +34,9 @@ export class FormularioPersonaComponent implements OnInit {
     this.auth.registroUsuario(this.registrarUsuario).subscribe(
       (res) => {
         console.log(res);
+        alert("felicitaciones acabas de registrarte");
+        // this.router.navigate(['/prefUsuario']);
+        this.showInput()
       },
       (err) => console.log(err)
     );
@@ -43,6 +46,8 @@ export class FormularioPersonaComponent implements OnInit {
     this.auth.loginUsuario(this.logearUsuario).subscribe(
       (res) => {
         console.log(res);
+        localStorage.setItem('token', res.jwtToken);
+        this.router.navigate(['/home']);
       },
       (err) => console.log(err)
     );

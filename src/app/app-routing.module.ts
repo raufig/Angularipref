@@ -15,51 +15,65 @@ import { MenuComponent } from './menu/menu.component';
 import { PreferenciasUsuarioComponent } from './preferencias-usuario/preferencias-usuario.component';
 import { FormularioMesasComponent } from './mesas-restaurante/formulario-mesas/formulario-mesas.component'
 import { SugerenciasPrefUsuarioComponent } from './sugerencias-pref-usuario/sugerencias-pref-usuario.component';
+import { AuthGuard } from './guard/auth.guard'
 
 const routes: Routes = [
   
   {
     path:'',component:IndexIprefComponent,
-    // pathMatch: 'full',
+    pathMatch: 'full',
   },
   {
-    path:'home',component:HomeComponent
+    path:'home',component:HomeComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path: 'dashboard', component: DashboardComponent
+    path: 'dashboard', component: DashboardComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path: 'ordenes', component: OrdenesComponent
+    path: 'ordenes', component: OrdenesComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path: 'mesas', component: MesasRestauranteComponent
+    path: 'mesas', component: MesasRestauranteComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path: 'metodos-pago', component: MetodosPagoComponent
+    path: 'metodos-pago', component: MetodosPagoComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path: 'cupon', component: CuponComponent
+    path: 'cupon', component: CuponComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path: 'perfil-usuario', component: PerfilUsuarioComponent
+    path: 'perfil-usuario', component: PerfilUsuarioComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path: 'perfil-restaurante', component: PerfilRestauranteComponent
+    path: 'perfil-restaurante', component: PerfilRestauranteComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path: 'crearPlato', component: CrearPlatoComponent
+    path: 'crearPlato', component: CrearPlatoComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path: 'menu', component: MenuComponent
+    path: 'menu', component: MenuComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path: 'prefUsuario', component: PreferenciasUsuarioComponent
+    path: 'prefUsuario', component: PreferenciasUsuarioComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path:'formularioMesas', component: FormularioMesasComponent
+    path:'formularioMesas', component: FormularioMesasComponent,
+    // canActivate: [AuthGuard]
   },
   {
-    path: 'sugUsuario', component: SugerenciasPrefUsuarioComponent
+    path: 'sugUsuario', component: SugerenciasPrefUsuarioComponent,
+    // canActivate: [AuthGuard]
   },
 ];
 
