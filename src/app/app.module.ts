@@ -4,7 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ScriptManagerMenusFormService } from './script-manager-menus-form.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthService } from './service/auth.service';
-import { FormsModule, ReactiveFormsModule} from '@angular/forms'
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AuthGuard } from './guard/auth.guard'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -103,7 +104,7 @@ import { HomeCartasComponent } from './home/home-cartas/home-cartas.component';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [ScriptManagerMenusFormService, AuthService],
+  providers: [ScriptManagerMenusFormService, AuthService, AuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

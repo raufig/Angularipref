@@ -34,6 +34,8 @@ export class FormularioEmpresaComponent implements OnInit {
     this.auth.registroRestaurante(this.registrarRestaurante).subscribe(
       (res) => {
         console.log(res);
+        alert("felicitaciones acabas de registrarte");
+        this.showInput()
       },
       (err) => console.log(err)
     );
@@ -43,6 +45,8 @@ export class FormularioEmpresaComponent implements OnInit {
     this.auth.loginRestaurante(this.logearRestaurante).subscribe(
       (res) => {
         console.log(res);
+        localStorage.setItem('token', res.jwtToken);
+        this.router.navigate(['/dashboard']);
       },
       (err) => console.log(err)
     );

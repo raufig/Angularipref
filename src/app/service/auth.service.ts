@@ -23,7 +23,9 @@ export class AuthService {
     return this.http.post<any>(this.loginUrlUsuario, user);
   }
 
-  // Incluir funciones para el restaurante
+
+
+  // -----------------------Incluir funciones para el restaurante -----------------
   registroRestaurante(rest){
     return this.http.post<any>(this.registroUrlRestaurante, rest);
   }
@@ -31,4 +33,16 @@ export class AuthService {
   loginRestaurante(rest){
     return this.http.post<any>(this.loginUrlRestaurante, rest);
   }
+
+  
+   // -----------------Metodos que sirven tanto para Usuario y Restaurante para revisar los jwtToken en local -----------------
+// Si el usuario esta conectado, puede navegar por las otras urls.
+// La funcion loginUs() en formulario-persona guarda el jwtToken en la variable 'token'
+loginOn() {
+  return !!localStorage.getItem('token')
+}
+// Comprobar que el token no ha sido vulnerado
+obtenerToken() {
+  return localStorage.getItem('token');
+}
 }
