@@ -1,4 +1,4 @@
-<div class="container row d-flex"  >
+<div class="principal row accordion " id="accordionExample" >
     <div class="dadtmp col-3" *ngFor="let prefe of prefer; index as i" >
       <div
         class="circles d-flex flex-column justify-content-center align-items-center"
@@ -20,16 +20,16 @@
 
 
         
-          <div class="collapse" id="{{prefe._id}}" >
+          <div class="collapse sencondCircles" id="{{prefe._id}}" data-parent="#accordionExample" >
             <div class="arrow"></div>
             <div class="d-flex row">
-        <div class="d-flex col-1" *ngFor="let subprefr of prefe.subpref">
+        <div class="d-flex col-4" *ngFor="let subprefr of prefe.subpref">
           
         <div
           class="circles2 imgcheck d-flex  justify-content-center align-items-center"
           
         >
-          <input type="checkbox" id="{{subprefr._id}}" name="{{subprefr._id}}" value="" />
+          <input type="checkbox" id="{{subprefr._id}}" name="{{subprefr._id}}" value="{{subprefr.except}}" />
 
           <label
             class="d-flex flex-column justify-content-center align-items-center"

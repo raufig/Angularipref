@@ -1,5 +1,5 @@
-.container{
-    display: flex;
+.principal{
+    padding: 25px 175px;
 }
 
 .circles{
@@ -9,7 +9,7 @@
     border-radius: 50px;
     cursor: pointer;
     border-radius: 100%;
-    margin: 0 5px;
+    margin: 10px 5px;
     box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.75);
     background: rgba(0, 0, 0, 0.014);
     /* transition: transform .2s; */
@@ -19,7 +19,7 @@
     
 }
 .circles{
-    animation:  jello-horizontal 0.9s both;
+    animation:  jello-horizontal 1.5s both;
     
 }
 
@@ -54,13 +54,17 @@
     border-radius: 50px;
     cursor: pointer;
     border-radius: 100%;
-    margin: 0 5px;
+    margin: 10px 5px;
     box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.75);
     background: rgba(0, 0, 0, 0.014);
     transition: transform .2s;
 }
 .circles2:hover{
     transform: scale(0.9);
+}
+.sencondCircles{
+  width: 800px;
+  margin-right: 300px;
 }
 .arrow{
     margin-left: 50px;
