@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { PreferenciasService } from '../../service/preferencias.service'
 @Component({
   selector: 'app-header-pref-usuario',
   templateUrl: './header-pref-usuario.component.html',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderPrefUsuarioComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private preferencias: PreferenciasService) { }
+  info =[{"name": "satanas"}];
   ngOnInit(): void {
+/*     this.preferencias.getInfor().subscribe(
+      (res)=>{
+        this.info = res
+      },
+      (err)=>{
+        console.log(err)
+      }
+    ) */
   }
 
 }

@@ -41,6 +41,7 @@ import { HeaderRestauranteComponent } from './header-restaurante/header-restaura
 import { SugerenciasPrefUsuarioComponent } from './sugerencias-pref-usuario/sugerencias-pref-usuario.component';
 import { HeaderSugerenciaPrefUComponent } from './sugerencias-pref-usuario/header-sugerencia-pref-u/header-sugerencia-pref-u.component';
 import { HomeCartasComponent } from './home/home-cartas/home-cartas.component';
+import { CirculosComponent } from './preferencias-usuario/circulos/circulos.component';
 
 // const appRouter: Routes = [
 //   {path:'',component:IndexIprefComponent},
@@ -94,6 +95,7 @@ import { HomeCartasComponent } from './home/home-cartas/home-cartas.component';
     HeaderSugerenciaPrefUComponent,
     HomeCartasComponent,
     FormularioMesasComponent,
+    CirculosComponent,
   ],
   imports: [
     BrowserModule,

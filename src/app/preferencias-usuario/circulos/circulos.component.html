@@ -1,0 +1,48 @@
+<div class="container row d-flex"  >
+    <div class="dadtmp col-3" *ngFor="let prefe of prefer; index as i" >
+      <div
+        class="circles d-flex flex-column justify-content-center align-items-center"
+        type="button"
+        data-toggle="collapse"
+        [attr.data-target] = "'#' + prefe._id"
+        aria-expanded="true"
+        [attr.aria-controls] = "prefe._id"
+        
+        
+      >
+        <span class="">{{ prefe.icon }}</span>
+        <span class="text-center">{{ prefe.nombre }}</span>
+        <div class="">
+          <span class=""></span>    
+          
+        </div>
+      </div>
+
+
+        
+          <div class="collapse" id="{{prefe._id}}" >
+            <div class="arrow"></div>
+            <div class="d-flex row">
+        <div class="d-flex col-1" *ngFor="let subprefr of prefe.subpref">
+          
+        <div
+          class="circles2 imgcheck d-flex  justify-content-center align-items-center"
+          
+        >
+          <input type="checkbox" id="{{subprefr._id}}" name="{{subprefr._id}}" value="" />
+
+          <label
+            class="d-flex flex-column justify-content-center align-items-center"
+            for="{{subprefr._id}}"
+          >
+            <div class="shadow"></div>
+            <span class="text-center">{{subprefr.nombre}}</span>
+            <span>🥩</span>
+          </label>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
