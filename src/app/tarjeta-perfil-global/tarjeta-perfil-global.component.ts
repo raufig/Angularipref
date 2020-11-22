@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from '../service/home.service'
 
 @Component({
   selector: 'app-tarjeta-perfil-global',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TarjetaPerfilGlobalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private informacion: HomeService) { }
 
+  info =[];
   ngOnInit(): void {
+     this.informacion.getinfo().subscribe(
+      (res)=>{
+        this.info = res
+      },
+      (err)=>{
+        console.log(err)
+      }
+    ) 
   }
 
+  
 }

@@ -6,6 +6,7 @@ const schemaPrefUser = new mongoose.Schema(
     user_id: { type: Schema.Types.ObjectId, ref: 'user' },
     pref1: [{ type: Schema.Types.ObjectId, ref: 'preferencia' }],
     pref2: [{ type: Schema.Types.ObjectId, ref: 'subprefs' }],
+    except: [{ type: Schema.Types.ObjectId, ref: 'subprefs' }],
     
   },
   {

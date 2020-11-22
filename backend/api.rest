@@ -38,12 +38,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmE1ODYwY
 
 {
     
-    "pref1": ["5fad2f143165585fb8d00fae"],
-    "pref2": [
-            "5fad2ff63165585fb8d00fb3",
-            "5fad2ff63165585fb8d00fb2",
-            "5fad2ff63165585fb8d00fb3"
-        ]
+    "pref1": "5fad2f143165585fb8d00fae",
+    "pref2": "5fad2ff63165585fb8d00fb3"
+            
+        
    
   }
 
@@ -167,7 +165,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3M
 
 {
     
-    "nombre": "Ultimo Plato!",
+    "nombre": "otro Plato!",
     "categoria": "Pitas",
     "descrip": "Este plato Es una chimba",
     "tiempoPreparacion": 120,
