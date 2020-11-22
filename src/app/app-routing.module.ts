@@ -33,7 +33,7 @@ const routes: Routes = [
   },
   {
     path: 'ordenes', component: OrdenesComponent,
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   },
   {
     path: 'mesas', component: MesasRestauranteComponent,

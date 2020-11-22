@@ -26,6 +26,16 @@ export class HomeCartasComponent implements OnInit {
         imagen: "../../../assets/img/home/crepes.png",
         descripcion: "Crepes & Wafles lo mejor para ti",
        },
+       {
+        nombre: "Wafles",
+        imagen: "../../../assets/img/home/crepes.png",
+        descripcion: "Crepes & Wafles lo mejor para ti",
+       },
+       {
+        nombre: "Wafles",
+        imagen: "../../../assets/img/home/crepes.png",
+        descripcion: "Crepes & Wafles lo mejor para ti",
+       },
     ]
   }
   ngOnInit(): void {

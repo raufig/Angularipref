@@ -14,30 +14,30 @@
 
 
 
-    <div class="d-flex justify-content-center" *ngFor="let plato of arregloMenu">
+    <div class="d-flex justify-content-around" >
         <div class="row">
-            <div class="col">
-                <div class="menu-card">
+            <div class="col" *ngFor="let plato of arregloMenu; index as i">
+                <div class="menu-card" >
                     <div class="menu-card-image">
-                        <img src={{plato.imagen}}>
+                        <img src={{plato.img}}>
                     </div>
                     <div class="food-card-content">
                         <div class="tittle-card">
                             <h3>{{plato.nombre}}</h3>
                         </div>
                         <div class="TiempoPreparacion">
-                            <p>tiempo Preparacion: {{plato.tiempo}} minutos</p>
+                            <p>Tiempo Preparacion: {{plato.tiempoPreparacion}} minutos</p>
                         </div>
                         <div class="descipcion-card">
-                            <p> Descripcion: {{plato.descripcion}}</p>
+                            <p> Descripcion: {{plato.descrip}}</p>
                             
                         </div>
                         <div class="menu-botones d-flex justify-content-center align-items-center">
                             <div>
-                                <button class="b-edit" (click)="showformCrud()">editar</button>
+                                <button class="b-edit" (click)="editarMenu()">Editar</button>
                             </div>
                             <div>
-                                <button class="b-elim">Eliminar</button>
+                                <button class="b-elim" (click)="eliminarMenu()">Eliminar</button>
                             </div>
                             <div>
                                 <button class="b-dupl" (click)="showformCrud()">Duplicar</button>
@@ -46,9 +46,9 @@
                     </div>
                 </div>
             </div>
-            
-            </div>
+          
         </div>
+    </div>
 
         
         
