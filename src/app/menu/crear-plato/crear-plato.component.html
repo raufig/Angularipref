@@ -8,19 +8,34 @@
   <div class="cont-imagen">
     <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt="foto-perfil" id="imgp">
+        
     <input type="file" id="input-foto" onChange="mostrarImagen(this)">
   </div>
   <div class="form-grupo">
-    <input type="text" placeholder="Nombre del plato">
-    <label>Titulo</label>
+    <label >Nombre plato</label>
+    <input [(ngModel)]="crearPlato.nombre" name="nombre" type="text">
   </div>
+  
   <div class="form-grupo">
-    <textarea></textarea>
-    <label >Descripción</label>
+    <label >Categoria</label>
+    <input [(ngModel)]="crearPlato.categoria" name="Categoria" type="text">
+    
   </div>
-  <div class=" grupo-tiempo">
-     <input type="text">
-    <label>Tiempo de preparación</label>
+
+  <div class="form-grupo">
+    <label>Descripcion</label>
+    <textarea [(ngModel)]="crearPlato.descrip" name="Descripcion"></textarea>
+  </div>
+
+  <div class="tiempoyprecio container d-flex justify-content-between" >
+    <div class="grupo-tiempo">
+      <label>Tiempo de preparacion</label>
+      <input [(ngModel)]="crearPlato.tiempoPreparacion" name="Tiempo de preparacion" type="text">
+    </div>
+    <div class="grupo-precio">
+      <label>Precio</label>
+      <input [(ngModel)]="crearPlato.precio" name="Precio" type="text">
+    </div>
   </div>
   
 
@@ -52,6 +67,6 @@
   <div class="botones-ingredientes">
     <button class="btn-edi">Limpiar</button>
     <button class="btn-eli" (click)="hideformCrud()">Cancelar</button>
-    <button class="btn-cre">Crear</button>
+    <button class="btn-cre" (click)="crear()">Crear</button>
   </div>
 </div>

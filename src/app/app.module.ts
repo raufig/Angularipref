@@ -7,6 +7,7 @@ import { AuthService } from './service/auth.service';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AuthGuard } from './guard/auth.guard';
 import { TokenInterceptorService } from './service/token-interceptor.service'
+import { CrearMenuService } from './service/crear-menu.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -107,11 +108,16 @@ import { CirculosComponent } from './preferencias-usuario/circulos/circulos.comp
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [ScriptManagerMenusFormService, AuthService, AuthGuard,{
-    provide: HTTP_INTERCEPTORS,
-    useClass: TokenInterceptorService,
-    multi: true,
-  }],
+  providers: [
+    ScriptManagerMenusFormService, 
+    AuthService, 
+    CrearMenuService,
+    AuthGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true,
+    }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
