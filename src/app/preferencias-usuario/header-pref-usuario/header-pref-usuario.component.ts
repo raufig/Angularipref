@@ -8,16 +8,17 @@ import { PreferenciasService } from '../../service/preferencias.service'
 export class HeaderPrefUsuarioComponent implements OnInit {
 
   constructor(private preferencias: PreferenciasService) { }
-  info =[{"name": "satanas"}];
+  
+  info =[];
   ngOnInit(): void {
-/*     this.preferencias.getInfor().subscribe(
+     this.preferencias.getInfor().subscribe(
       (res)=>{
         this.info = res
       },
       (err)=>{
         console.log(err)
       }
-    ) */
+    ) 
   }
 
 }

@@ -1,24 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-
 @Injectable({
   providedIn: 'root'
 })
-export class PreferenciasService {
+export class HomeService {
 
   constructor(private http: HttpClient) { }
 
-  private getPrefUrl = 'http://localhost:3000/api/user/welcome';
+  private getRest = 'http://localhost:3000/api/user/home';
   private getInfo = 'http://localhost:3000/api/user/edit-perfil';
 
-  getPref(){
-    return this.http.get<any>(this.getPrefUrl)
+  getHome(){
+    return this.http.get<any>(this.getRest)
   }
-  savePref(pref){
-    return this.http.post<any>(this.getPrefUrl, pref)
-  }
-  getInfor(){
+
+  getinfo(){
     return this.http.get<any>(this.getInfo)
   }
 }

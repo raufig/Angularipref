@@ -1,5 +1,7 @@
 .principal{
     padding: 25px 175px;
+    width: auto;
+    justify-content: center;
 }
 
 .circles{
@@ -52,7 +54,7 @@
     height: 130px;
     border: 4px solid rgba(38, 195, 195, 0.849);
     border-radius: 50px;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 100%;
     margin: 10px 5px;
     box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.75);
@@ -63,8 +65,12 @@
     transform: scale(0.9);
 }
 .sencondCircles{
-  width: 800px;
+  width: 500px;
   margin-right: 300px;
+  justify-content: center;
+}
+.testA{
+  padding-right: 0px;
 }
 .arrow{
     margin-left: 50px;
@@ -82,15 +88,19 @@
     position:relative;
     display: inline-block;
 }
-.imgcheck input[type="checkbox"]{
-    display:none;
-}
-.imgcheck input[type="checkbox"] + label{
+.imgcheck input[type="radio"]{
+    display:block;
+    opacity:1;
     cursor:pointer;
+    
+}
+.imgcheck input[type="radio"] + label{
+    background-color: rgba(0, 0, 0, 0);
+    
 }
 
 
-.circles2 input[type="checkbox"]:checked + label>.shadow{
+.circles2 input[type="radio"]:checked + label>.shadow{
   position: absolute;
   
   bottom: -2px;
@@ -102,7 +112,7 @@
   
     
 }
-.imgcheck input[type="checkbox"]:checked + label:before{
+.imgcheck input[type="radio"]:checked + label:before{
     position:absolute;
     content:'';
     

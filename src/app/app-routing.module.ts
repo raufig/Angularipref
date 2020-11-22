@@ -65,7 +65,7 @@ const routes: Routes = [
   },
   {
     path: 'prefUsuario', component: PreferenciasUsuarioComponent,
-    // canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path:'formularioMesas', component: FormularioMesasComponent,

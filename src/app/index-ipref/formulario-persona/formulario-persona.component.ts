@@ -47,7 +47,7 @@ export class FormularioPersonaComponent implements OnInit {
       (res) => {
         console.log(res);
         localStorage.setItem('token', res.jwtToken);
-        this.router.navigate(['/home']);
+        this.router.navigate(['/prefUsuario']);
       },
       (err) => console.log(err)
     );

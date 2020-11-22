@@ -1,16 +1,16 @@
-<section class="infoUser d-flex">
+<section class="infoUser d-flex"  *ngFor="let infor of info">
    
-    <div class="form-group img-info-perfil">
-        <div class="editprofile">
-            <img id="blah" src="../../assets/img/home/perfil.png">
+    <div class="form-group img-info-perfil" >
+        <div class="editprofile" >
+            <img  [src]="infor.img">
             <div class="overlay">
                 <input id="imgInp" type="file">
                 <p class="fas fa-camera fa-3x"></p>
             </div>
         </div>
     </div>
-    <div class="info-perfil">
-        <h2 class="nombreUser" id="nombreUser">Hola Andres Aperllido Apellido</h2>
+    <div class="info-perfil" >
+        <h2 class="nombreUser" id="nombreUser">Hola {{infor.name}} {{infor.lastN}}</h2>
         <p class="js-toggle" data-container="toggle-1">Cuentanos acerca de ti <i class="hide fas fa-pencil-alt"></i></p>
         <div class="toggle-container" id="toggle-1">
             <input type="text" maxlength="4"><small id="HelpInline" class="text-muted">

@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.use("/api/user", require('./routes/user.routes'))
 app.use("/api/rest", require("./routes/rest.routes"))
-
+app.use("/public", express.static("public"))
 module.exports = app;
 
 

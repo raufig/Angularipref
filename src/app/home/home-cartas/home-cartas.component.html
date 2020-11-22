@@ -1,20 +1,20 @@
 <main class='w-100'>
 <!-- cartas -->
-<section class="cartas-menu" id="cartas">
+<section class="cartas-menu" id="cartas" >
     <div class="cont-cartas-general d-flex justify-content-between"  >
         <h1 class="tm">Solo para ti</h1>
 
         
-        <div class="carta-home" *ngFor=" let restaurante of restaurantes; index as i">
-            <div class="carta-head-home" style="background-image: url({{restaurante.imagen}})">
-                <span class="categoria">{{restaurante.nombre}}</span>
+        <div class="carta-home" *ngFor=" let restaurante of restCards; index as i">
+            <div class="carta-head-home" style="background-image: url({{restaurante.img}})">
+                <span class="categoria">{{restaurante.name}}</span>
               <div class="sombra-body">
-                   <small>{{restaurante.descripcion}}</small>
+                   <small>{{restaurante.addr}}</small>
               </div>
             </div>
             <div class="carta-body-home d-flex">
                 <div class="nombre-cart-body">
-                  <p>{{restaurante.nombre}}</p>
+                  <p>{{restaurante.name}}</p>
 
                   <!-- <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> -->
                     <div class="starRating">
