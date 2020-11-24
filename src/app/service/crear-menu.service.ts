@@ -15,7 +15,7 @@ export class CrearMenuService {
   // private getMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
   // private putMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
 
-  private deleteMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
+  private deleteMenuId = 'http://localhost:3000/api/rest/MenuRestaurante';
   private ingredientes = 'http://localhost:3000/api/rest/crearPlato'
 
   getIngredientes(){
