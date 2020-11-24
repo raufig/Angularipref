@@ -173,7 +173,7 @@
    border: 1px solid #fff;
    cursor: pointer;
    transition: .4s all linear;
-   
+   z-index: 2;
 }
 header button:focus{
     outline: none;
@@ -196,7 +196,7 @@ header button:active{
    font-family: 'Open Sans';
    font-size: 16px;
    top: -350px;
-   
+   z-index: 2;
 }
 
 .icono-formulario-ingreso{

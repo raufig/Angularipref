@@ -16,9 +16,13 @@
         <div class="container-fluid">
             <div id="carousel-example" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner row w-100 mx-auto d-flex" id="carousel"  role="listbox" >
-                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active" *ngFor='let imagen of imagenesCarousel'>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                            <img src="../../assets/img/heart.png" class="img-fluid mx-auto d-block" alt="img1">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3" *ngFor='let imagen of imagenesCarousel'>
                             <img src="{{imagen}}" class="img-fluid mx-auto d-block" alt="img1">
                         </div>
+                        
                 </div>
 
                     <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">

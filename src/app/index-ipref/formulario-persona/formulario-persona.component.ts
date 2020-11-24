@@ -37,6 +37,7 @@ export class FormularioPersonaComponent implements OnInit {
         alert("felicitaciones acabas de registrarte");
         // this.router.navigate(['/prefUsuario']);
         this.showInput()
+        this.clearForm()
       },
       (err) => console.log(err)
     );
@@ -64,5 +65,8 @@ export class FormularioPersonaComponent implements OnInit {
 
         
   };
- 
+  clearForm(){
+    const formClear = <HTMLFormElement>document.getElementById('formulario')
+    formClear.reset();
+  }
 }
