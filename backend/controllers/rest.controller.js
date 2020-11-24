@@ -76,7 +76,10 @@ restCtrl.firstLogInRest = async (req, res) => {
       res.status(200).send(def);
   }
 
-
+  restCtrl.getIngredientes = async (req, res)=>{
+    let ingredientes = await Ingrediente.find()
+    res.status(200).send(ingredientes)
+  }
   restCtrl.createPlato = async (req, res) =>{
     const url = req.protocol + "://" + req.get("host");
     let newPlato = await Platos.findOne ({nombre: req.body.nombre});
@@ -95,6 +98,7 @@ restCtrl.firstLogInRest = async (req, res) => {
       categoria: req.body.categoria,
       descrip: req.body.descrip,
       tiempoPreparacion: req.body.tiempoPreparacion,
+      ingredientesName: req.body.ingredientesName,
       ingredientes: req.body.ingredientes,
       gruposAliment: req.body.gruposAliment,
       precio: req.body.precio,

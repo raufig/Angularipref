@@ -7,9 +7,9 @@
 <div class="crud-ingredientes">
   <div class="cont-imagen">
     <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        alt="foto-perfil" id="imgp">
+        alt="foto-plato" id="imgp">
         
-    <input type="file" id="input-foto" onChange="mostrarImagen(this)">
+    <input type="file" id="input-foto" (change)="uploadFile($event); imgPreview($event)">
   </div>
   <div class="form-grupo">
     <label >Nombre plato</label>
@@ -30,7 +30,7 @@
   <div class="tiempoyprecio container d-flex justify-content-between" >
     <div class="grupo-tiempo">
       <label>Tiempo de preparacion</label>
-      <input [(ngModel)]="crearPlato.tiempoPreparacion" name="Tiempo de preparacion" type="text">
+      <input [(ngModel)]="crearPlato.tiempoPreparacion" name="Tiempo de preparacion" type="text" placeholder="minutos">
     </div>
     <div class="grupo-precio">
       <label>Precio</label>
@@ -39,24 +39,33 @@
   </div>
   
 
-  <div class="grupo-ingresar-ingrediente">
-    <input type="text" placeholder="Ingrediente" id="ingrediente">
+  <div class="grupo-ingresar-ingrediente" >
+    <input list="ingredientes" type="text" placeholder="Ingrediente" id="ingrediente">
     <input type="number" placeholder="Gramaje" id="gramaje">
-    <i class="fas fa-plus" id="agregar" ></i>
+    <i class="fas fa-plus" id="agregar" type="button" (click)="test($event)"></i>
+
   </div>
+  
+  <datalist id="ingredientes" >
+    
+    <option *ngFor="let ingredi of ingredientes" value="{{ingredi.nombre}}"></option>
+  
+  </datalist>
 
   <table class="tabla-listado mt-5">
 
     <thead>
       <tr>
         <th>Nombre</th>
-        <th>Peso (Oz)</th>
+        <th>Gramaje (g)</th>
         <th>Eliminar</th>
       </tr>
     </thead>
 
-      <tbody id="tabla">
-      
+      <tbody id="tabla" *ngFor="let htmlIngredi of ingreHtml">
+        <td>{{htmlIngredi.ingrediente}}</td>
+        <td>{{htmlIngredi.gramaje}}</td>
+        <td><i class="fas fa-trash eliminar" ></i></td>
 
       </tbody>
      

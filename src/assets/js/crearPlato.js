@@ -1,4 +1,4 @@
-const btnAgregar = document.getElementById('agregar');
+/* const btnAgregar = document.getElementById('agregar');
 const tabla = document.getElementById('tabla');
 let ingredientes = [];
 
@@ -64,19 +64,25 @@ function insertarIngrediente(ingrediente,gramaje){
             }
         }
  }
- 
+  */
 
  let foto = document.getElementById('imgp');
-        function mostrarImagen(e) {
-            let reader = new FileReader();
-            reader.onload = function (e) {
-                foto.src = e.target.result;
-            }
-            reader.readAsDataURL(e.files[0]);
-            // objeto.style.backgroundImage= "url("+laurl+")
-        }
+ function imgPreview(e) {
+     let reader = new FileReader();
+     reader.onload = function (e) {
+         foto.src = e.target.result;
+     }
+     reader.readAsDataURL(e.files[0]);
+     // objeto.style.backgroundImage= "url("+laurl+")
+ }
  
- 
+ /* let foto = (<HTMLImageElement>document.getElementById('imgp'));
+ console.log("thisIsFoto", foto)
+  const reader = new FileReader();
+     reader.onload = (e) => {
+       foto.src = e.target.result as string;
+     }
+     reader.readAsDataURL(e.files[0]) */ 
 
 
 

@@ -11,6 +11,7 @@ router.get('/welcome', authR, restCtrl.firstLogInRest);
 router.post('/welcome', authR, restCtrl.savePref );
 router.get("/test", authR, restCtrl.laMasPro); 
 router.get("/MenuRestaurante", authR, restCtrl.getPlatos);
+router.get("/crearPlato", authR, restCtrl.getIngredientes);
 router.post('/crearPlato', uploadFile.single("img"), authR, restCtrl.createPlato);
 router.get("/MenuRestaurante/:_id", authR, restCtrl.getPlato);
 router.put("/MenuRestaurante/:_id", authR, restCtrl.editPlato);

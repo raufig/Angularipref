@@ -10,6 +10,7 @@ const schemaPlatos = new mongoose.Schema(
     categoria: String,
     descrip: String,
     tiempoPreparacion: Number,
+    ingredientesName: [{type: String, ref:'Ingrediente'}],
     ingredientes: [{ type: Schema.Types.ObjectId, ref: 'Ingrediente' }],
     gruposAliment: [{ type: Schema.Types.ObjectId, ref: 'GruposAlimenticio'  }],
     precio: Number,
