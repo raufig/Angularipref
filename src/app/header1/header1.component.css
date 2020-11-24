@@ -46,7 +46,7 @@ header>.cont-menu>span>.fa-bars{
      transition: .4s all;
      text-align: center;
     padding: 90px 30px 90px 30px; 
-    z-index: 3;
+    z-index: 20000;
     
  
    

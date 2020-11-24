@@ -84,6 +84,7 @@ let foto = (<HTMLImageElement>document.getElementById('imgp'));
       (res)=>{ 
         console.log(res)
         this.hideformCrud()
+        this.refresh()
       },
       (err)=>{
         console.log(err);
