@@ -191,7 +191,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3M
 }
 
 ###
-GET http://localhost:3000/api/rest/MenuRestaurante
+GET http://localhost:3000/api/rest/crearPlato
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
 ###
 GET http://localhost:3000/api/rest/MenuRestaurante/5fb2f2ae8aa612431cc4ad09

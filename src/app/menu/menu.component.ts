@@ -13,12 +13,7 @@ export class MenuComponent implements OnInit {
   arregloMenu = [];
   
   constructor(private menuList: CrearMenuService) {
-    // this.arregloMenu=[{
-    //   nombre: "Arroz",
-    //   tiempo: 60,
-    //   descripcion:"Se calienta agua con cebolla larga, sal, aceite",
-    //   imagen:"https://s1.eestatic.com/2020/05/29/ciencia/nutricion/Arroz-Seguridad_alimentaria-Enfermedades-Nutricion_493711911_152762637_1706x960.jpg"
-    // }]
+
    }
 
   ngOnInit(): void {

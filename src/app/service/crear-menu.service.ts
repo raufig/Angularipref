@@ -15,6 +15,11 @@ export class CrearMenuService {
   // private getMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
   // private putMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
   private deleteMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
+  private ingredientes = 'http://localhost:3000/api/rest/crearPlato'
+
+  getIngredientes(){
+    return this.http.get<any>(this.ingredientes);
+  }
 
   listarMenu(){
     return this.http.get<any>(this.getMenu);
@@ -25,10 +30,7 @@ export class CrearMenuService {
   }
 
   eliminarMenu(plato){
-    console.log("eliminando")
-    console.log(plato)
     const _id = plato._id
-    console.log("yo soy id", _id)
     const url = `${this.deleteMenuId}/${_id}`;
     return this.http.delete<any>(url);
   }
