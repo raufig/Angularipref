@@ -113,12 +113,15 @@
   }
   .b-edit{
     background: rgb(103, 168, 211);  
+    cursor: pointer;
   }
 .b-elim{
     background: red;
+    cursor: pointer;
 }
 .b-dupl{
     background: rgb(9, 187, 23);
+    cursor: pointer;
 }
   
 

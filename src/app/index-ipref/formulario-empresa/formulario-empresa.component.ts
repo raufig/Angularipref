@@ -36,6 +36,7 @@ export class FormularioEmpresaComponent implements OnInit {
         console.log(res);
         alert("felicitaciones acabas de registrarte");
         this.showInput()
+        this.clearForm()
       },
       (err) => console.log(err)
     );
@@ -61,6 +62,11 @@ export class FormularioEmpresaComponent implements OnInit {
       loginIngresarctual.style.top='100px'
       formRegistro.style.backgroundColor='#d1d1b477'
   };
+
+  clearForm(){
+    const formClear = <HTMLFormElement>document.getElementById('formulario')
+    formClear.reset();
+  }
 }
 
 

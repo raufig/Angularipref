@@ -14,7 +14,7 @@ export class CrearMenuService {
   private getMenu = 'http://localhost:3000/api/rest/MenuRestaurante';
   // private getMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
   // private putMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
-  private deleteMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
+  //private deleteMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
 
   listarMenu(){
     return this.http.get<any>(this.getMenu);
@@ -29,7 +29,7 @@ export class CrearMenuService {
     console.log(plato)
     const _id = plato._id
     console.log("yo soy id", _id)
-    const url = `${this.deleteMenuId}/${_id}`;
+    const url = `${this.getMenu}/${_id}`;
     return this.http.delete<any>(url);
   }
 }
