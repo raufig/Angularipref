@@ -1,6 +1,5 @@
 import { TransitiveCompileNgModuleMetadata } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { CardTendenciaComponent } from '../dashboard/card-tendencia/card-tendencia.component';
 import { CrearMenuService } from '../service/crear-menu.service';
 
 @Component({
@@ -26,10 +25,32 @@ export class MenuComponent implements OnInit {
       }
     )
   }
+  updatePlato=[{
+    _id: '',
+    img: '',
+    NombrePlato: '',
+    categoria: '',
+    descrip: '',
+    tiempoPreparacion: '',
+    precio: '',
+    ingredientes: [],
+    gramaje: []
+  }]
 
-  editarMenu() {
-    this.showformCrud()
-    
+  editarMenu(plato){
+    console.log(plato)
+    console.log(this.updatePlato)
+    this.updatePlato=Object.assign({
+      _id: plato._id,
+      img: plato.img,
+      NombrePlato: plato.nombre,
+      categoria: plato.categoria,
+      descrip: plato.descrip,
+      tiempoPreparacion: plato.tiempoPreparacion,
+      precio: plato.precio,
+      ingredientes: plato.ingredientesName,
+      gramaje: plato.gramaje
+    })
   }
 
   duplicarMenu() {
@@ -52,7 +73,7 @@ export class MenuComponent implements OnInit {
   
   
   showformCrud(){
-    document.getElementById('camiCrud').style.top="60px"
+    document.getElementById('MenuCrud').style.top="60px"
   }
 
 }

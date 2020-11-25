@@ -1,4 +1,4 @@
-/* const btnAgregar = document.getElementById('agregar');
+/*  const btnAgregar = document.getElementById('agregar');
 const tabla = document.getElementById('tabla');
 let ingredientes = [];
 
@@ -64,7 +64,7 @@ function insertarIngrediente(ingrediente,gramaje){
             }
         }
  }
-  */
+  
 
  let foto = document.getElementById('imgp');
  function imgPreview(e) {
@@ -87,3 +87,4 @@ function insertarIngrediente(ingrediente,gramaje){
 
 
 
+ 

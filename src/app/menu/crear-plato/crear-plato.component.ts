@@ -94,7 +94,7 @@ let foto = (<HTMLImageElement>document.getElementById('imgp'));
   }
 
   hideformCrud(){
-    document.getElementById('camiCrud').style.top="-900px"
+    document.getElementById('MenuCrud').style.top="-900px"
   }
 
   refresh(): void { window.location.reload(); }

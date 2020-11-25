@@ -72,7 +72,7 @@ const routes: Routes = [
     // canActivate: [AuthGuard]
   },
   {
-    path: 'sugUsuario', component: SugerenciasPrefUsuarioComponent,
+    path: 'sugUsuario/:_id', component: SugerenciasPrefUsuarioComponent,
     // canActivate: [AuthGuard]
   },
 ];

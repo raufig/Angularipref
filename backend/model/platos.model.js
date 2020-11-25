@@ -15,7 +15,7 @@ const schemaPlatos = new mongoose.Schema(
     gruposAliment: [{ type: Schema.Types.ObjectId, ref: 'GruposAlimenticio'  }],
     precio: Number,
     img: { type: String, default: "http://localhost:3000/public/1605630079235-recurso-12.png" },
-    
+    unidad:{type: Number, default: 1}
   },
   {
     timestamps: true,

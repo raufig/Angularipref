@@ -10,8 +10,8 @@
         </div>
     </section>
 
-    <section class="container welcome col-12">
-        <h3>Hola Andres Apellido</h3>
+    <section class="container welcome col-12" *ngFor="let infor of info">
+        <h3>Hola {{infor.name}} {{infor.lastN}}</h3>
         <h6>Bienvenido a Crepes & waffles</h6>
     </section>
 

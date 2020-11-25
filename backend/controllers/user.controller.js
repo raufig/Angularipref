@@ -71,9 +71,9 @@ userCtrl.getMenuRest = async (req, res) => {
   let userB =  await PrefUser.findOne({user_id: req.user._id}).select('except -_id')
   let abc= userB.toObject()
   let tmp = Object.values(abc.except)
-  console.log(tmp) 
+  //console.log(tmp) 
   let tmp2 = ["5fa76098c40c7c5219db5c06"]//, "5fa76098c40c7c5219db5c07" 
-  const platos = await Platos.find({rest_id: req.body.rest_id, gruposAliment: {$nin:tmp}})//.$where("gruposAliment").nin({ gruposAliment: "5fa76098c40c7c5219db5c06"})
+  const platos = await Platos.find({rest_id: req.params.rest_id, gruposAliment: {$nin:tmp}})//.$where("gruposAliment").nin({ gruposAliment: "5fa76098c40c7c5219db5c06"})
   
   res.status(200).send(platos)
 };

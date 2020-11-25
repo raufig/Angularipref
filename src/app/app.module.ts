@@ -44,6 +44,7 @@ import { SugerenciasPrefUsuarioComponent } from './sugerencias-pref-usuario/suge
 import { HeaderSugerenciaPrefUComponent } from './sugerencias-pref-usuario/header-sugerencia-pref-u/header-sugerencia-pref-u.component';
 import { HomeCartasComponent } from './home/home-cartas/home-cartas.component';
 import { CirculosComponent } from './preferencias-usuario/circulos/circulos.component';
+import { UpdatePlatoComponent } from './menu/update-plato/update-plato.component';
 
 // const appRouter: Routes = [
 //   {path:'',component:IndexIprefComponent},
@@ -98,6 +99,7 @@ import { CirculosComponent } from './preferencias-usuario/circulos/circulos.comp
     HomeCartasComponent,
     FormularioMesasComponent,
     CirculosComponent,
+    UpdatePlatoComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@
 
         
         <div class="carta-home" *ngFor=" let restaurante of restCards; index as i">
-            <div class="carta-head-home" style="background-image: url({{restaurante.img}})">
+            <div (click)="getMenuResta(restaurante)" class="carta-head-home" style="background-image: url({{restaurante.img}})">
                 <span class="categoria">{{restaurante.name}}</span>
               <div class="sombra-body">
                    <small>{{restaurante.addr}}</small>

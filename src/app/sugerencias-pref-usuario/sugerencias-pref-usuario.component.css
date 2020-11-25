@@ -74,6 +74,8 @@
 
 .quantPrefs{
     padding-top: 5px;
+    width: 40px;
+    align-items: center;
 }
 
 .mas-info h6{

@@ -2,13 +2,13 @@
 <app-header-sugerencia-pref-u></app-header-sugerencia-pref-u>
 
 <div class="d-flex justify-content-center">
-    <div class="row">
-        <div class="col">
+    <div class="row " *ngFor="let plato of menu; index as i">
+        <div class="col ">
             <div class="menu-card">
                 <div class="menu-card-image">
-                    <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    <img src="{{plato.img}}">
                 </div>
-                
+
                 <div class="food-card-content">
                     <div class="starRating text-center">
                         <span class="fa fa-star checked"></span>
@@ -19,54 +19,76 @@
                     </div>
 
                     <div class="tittle-card">
-                        <h5>patatas geniales</h5>
+                        <h5>{{plato.nombre}}</h5>
                     </div>
 
                     <div class="descipcion-card text-center">
-                        <p> Descripcion: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo suscipit, minus neque
-                        tempore eaque qui</p>                      
+                        <p> {{plato.descrip}}</p>
                     </div>
 
                     <div class="precio text-center">
-                        <p>$ 10.000</p>
+                        <p>$ {{plato.precio}}</p>
                     </div>
 
                     <div class="row">
-                            <div class="col">
-                                <div class="row justify-content-center">
-                                    <div class="col-3 border border-secondary  d-flex align-items-center justify-content-center ">
-                                        <span class="alignAddSub fa fa-plus "></span>
-                                    </div>
-                                    <div class="col-3 border border-secondary  d-flex align-items-center justify-content-center">
-                                        <h6 class="quantPrefs">5</h6>
-                                    </div>
-                                    <div class="col-3 border border-secondary d-flex align-items-center justify-content-center">
-                                        <span class="alignAddSub fa fa-minus"></span>
-                                    </div>
-                                </div> 
-                            </div>
-
-                            <div class="col">
-                                <div class="mas-info text-right pt-3">
-                                    <h6>+ informacion</h6>
+                        <div class="col">
+                            <div class="row justify-content-center">
+                                <div class="col-3 border border-secondary  d-flex align-items-center justify-content-center"
+                                    (click)="(plato.unidad = plato.unidad + 1)">
+                                    <i class="alignAddSub fa fa-plus "></i>
                                 </div>
-                            </div>  
-                    </div>
+                                <div
+                                    class="col-3 border border-secondary  d-flex align-items-center justify-content-center">
 
-                    <div class="menu-botones d-flex justify-content-center align-items-center">
-                        <div>
-                            <button class="botonNota">Nota</button>
+                                    <input id="{{plato._id}}" class="quantPrefs" type="number" value="{{plato.unidad}}" disabled>
+                                </div>
+                                <div class="col-3 border border-secondary d-flex align-items-center justify-content-center"
+                                    (click)="(plato.unidad = plato.unidad - 1)">
+                                    <i class="alignAddSub fa fa-minus"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <button class="botonAgregar">Agregar</button>
-                        </div>
-                        <div>
-                            <button class="botonCancelar">Cancelar</button>
+
+                        <div class="col">
+                            <div class="mas-info text-right pt-3">
+                                <h6 class="" data-toggle="collapse" [attr.href]="'#collapse' + plato._id" aria-expanded="false"
+                                    aria-controls="{{plato._id}}">+ informacion</h6>
+                                <a class="btn btn-primary" data-toggle="collapse" [attr.href]="'#collapse' + plato._id"
+                                    role="button" aria-expanded="false" aria-controls="{{plato._id}}">+ informacion</a>
+                            </div>
                         </div>
                     </div>
+                    <div class="row">
 
+                        <div class="collapse multi-collapse" [attr.id]="'collapse' + plato._id ">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col p-6">
+                                    <tbody id="tabla" *ngFor="let ingre of plato.ingredientesName">
+                                        <td>{{ingre}}</td>
+                                    </tbody>
+                                </div>
+                                <div class="col d-flex align-items-center">
+                                    
+                                    <p>Tiempo estimado {{plato.tiempoPreparacion}} minutos</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="menu-botones d-flex justify-content-center align-items-center">
+                            <div>
+                                <button class="botonNota">Nota</button>
+                            </div>
+                            <div>
+                                <button class="botonAgregar"(click)="crearOrden($event, plato.rest_id, plato.nombre, plato.descrip, plato._id)">Agregar</button>
+                            </div>
+                            <div>
+                                <button class="botonCancelar">Cancelar</button>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
-</div>

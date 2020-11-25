@@ -110,11 +110,11 @@ restCtrl.firstLogInRest = async (req, res) => {
 
   restCtrl.getPlatos = async (req, res) =>{
     const rests = await Platos.find({rest_id: req.rest._id})
-    res.json(rests)
+    res.status(200).send(rests)
   }
   restCtrl.getPlato = async (req, res) =>{
     const plato = await Platos.findById(req.params._id)
-    res.json(plato)
+    res.status(200).send(plato)
   }
 
   restCtrl.editPlato =  async (req, res) => {

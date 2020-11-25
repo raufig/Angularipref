@@ -7,9 +7,9 @@ const schemaOrdenes = new mongoose.Schema(
       user_name: { type: Schema.Types.String, ref: 'user' },
       rest_id: { type: Schema.Types.ObjectId, ref: 'rest' },
       estadoDeOrden: { type: String, default: "Recibido" },
-      nombre_plato: { type: String, default: "plato" },
-      descrip_plato: { type: String, default: "plato" },
-      contidad: {type: Number, default: 1},
+      nombre_plato: [{ type: String, default: "plato" }],
+      descrip_plato: [{ type: String, default: "plato" }],
+      contidad: [{type: Number, default: 1}],
       total_orden: Number,
 
  

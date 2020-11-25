@@ -16,7 +16,8 @@ export class CrearMenuService {
   // private putMenuId = 'http://localhost:3000/api/rest/MenuRestaurante/:_id';
 
   private deleteMenuId = 'http://localhost:3000/api/rest/MenuRestaurante';
-  private ingredientes = 'http://localhost:3000/api/rest/crearPlato'
+  private ingredientes = 'http://localhost:3000/api/rest/crearPlato';
+  private updatePlato = 'http://localhost:3000/api/rest/MenuRestaurante';
 
   getIngredientes(){
     return this.http.get<any>(this.ingredientes);
@@ -29,6 +30,18 @@ export class CrearMenuService {
 
   crearMenu(plato) {
     return this.http.post<any>(this.postCrearPLato, plato);
+  }
+
+  getPlato(plato){
+    const _id = plato
+    const url = `${this.updatePlato}/${_id}`;
+    return this.http.get<any>(url);
+  }
+  putPlato(plato){
+    const _id = plato._id
+    const url = `${this.updatePlato}/${_id}`;
+    return this.http.put<any>(url, plato);
+
   }
 
   eliminarMenu(plato){
