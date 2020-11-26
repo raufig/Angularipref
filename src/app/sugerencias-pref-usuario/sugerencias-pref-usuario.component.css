@@ -133,3 +133,7 @@
     top: -900px;
     transition: 0.4s all;
 }
+.totalFood{
+    border: none;
+    width: 55px;
+}

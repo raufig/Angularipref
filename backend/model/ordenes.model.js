@@ -9,7 +9,7 @@ const schemaOrdenes = new mongoose.Schema(
       estadoDeOrden: { type: String, default: "Recibido" },
       nombre_plato: [{ type: String, default: "plato" }],
       descrip_plato: [{ type: String, default: "plato" }],
-      contidad: [{type: Number, default: 1}],
+      cantidad: [{type: Number, default: 1}],
       total_orden: Number,
 
  

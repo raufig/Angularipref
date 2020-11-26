@@ -6,7 +6,7 @@
     background-size: cover;
     width: 100%;
     /* height: 105vh; */
-    height: 150vh;
+    height: 100vh;
    }
 .contenido-index{
    padding: 10px 160px;
@@ -22,7 +22,7 @@
   letter-spacing: 1px;
 }
 .logo-index{
-    width: 60px;
+    width: 400px;
 }
 .slogan{
     font-size: 27px;
@@ -30,3 +30,68 @@
     width: 700px;
     margin-top: 20px;
 }
+
+.checkboxSelect{
+    padding: 680px  0 0 660px;
+    background: transparent;
+    position: absolute;
+    display: flex;
+    color: #FFF;
+    font-weight:bolder ;
+}
+.checkboxSelect>span{
+    padding: 0 10px;
+}
+input.switch  {
+    font-size: 1.25em; /*<-  change size*/
+    height: 0.7em;
+    display: inline-flex;
+    align-items: center;
+    width: 1.65em;
+    position: relative;
+    margin: 0.3em 0;
+    
+    cursor: pointer;
+  }
+  
+  .switch::before {
+    content: "";
+    display: inline-flex;
+    position: absolute;
+  
+    height: 0.8em;
+    width: 1.4em;
+    padding: 0 0.2em;
+    background: #BDB9A6;
+    border-radius: 1em;
+  
+    box-shadow: inset 0 0.1em 0.3em rgba(0,0,0,0.3);
+    transition: all 300ms;
+  }
+  
+  .switch::after {
+    content: "";
+    display: inline-flex;
+    position: absolute;
+  
+    height: 1em;
+    width: 1em;
+    border-radius: 1em;
+    background: #FFF;
+    box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+    transition: all 300ms;
+  }
+  
+  input.switch:checked::after {
+            transform: translateX(80%);
+  }
+  
+  input.switch:checked::before {
+    background: #4CAF50;
+  }
+  
+  input.switch:disabled::before,
+  input.switch:disabled::after {
+    background: #ccc;
+    cursor: not-allowed;
+  }

@@ -1,6 +1,8 @@
 import { TransitiveCompileNgModuleMetadata } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CrearMenuService } from '../service/crear-menu.service';
+
 
 @Component({
   selector: 'app-menu',
@@ -11,7 +13,7 @@ export class MenuComponent implements OnInit {
 
   arregloMenu = [];
   
-  constructor(private menuList: CrearMenuService) {
+  constructor(private menuList: CrearMenuService, private router: Router) {
 
    }
 
@@ -71,9 +73,18 @@ export class MenuComponent implements OnInit {
     );
   }
   
-  
+  IdExist: boolean = false;
+
   showformCrud(){
     document.getElementById('MenuCrud').style.top="60px"
+  }
+  showUpdateMenu(info){
+    this.IdExist = true
+    document.getElementById('MenuUpdate').style.top="60px"
+    this.router.navigate([`/menu/${info._id}`])
+    console.log("estoy aqui", this.IdExist)
+
+
   }
 
 }

@@ -86,7 +86,7 @@ userCtrl.createOrder = async (req, res) =>{
     rest_id: req.body.rest_id,
     nombre_plato: req.body.nombre_plato,
     descrip_plato: req.body.descrip_plato,
-    contidad:req.body.contidad,
+    cantidad:req.body.contidad,
     total_orden:req.body.total_orden,
   });
    const result = await newOrder.save();
