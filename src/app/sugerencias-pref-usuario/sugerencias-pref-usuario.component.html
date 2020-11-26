@@ -1,7 +1,7 @@
 <app-header-restaurante></app-header-restaurante>
 <app-header-sugerencia-pref-u></app-header-sugerencia-pref-u>
 
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-around">
     <div class="row " *ngFor="let plato of menu; index as i">
         <div class="col ">
             <div class="menu-card">
@@ -53,8 +53,8 @@
                             <div class="mas-info text-right pt-3">
                                 <h6 class="" data-toggle="collapse" [attr.href]="'#collapse' + plato._id" aria-expanded="false"
                                     aria-controls="{{plato._id}}">+ informacion</h6>
-                                <a class="btn btn-primary" data-toggle="collapse" [attr.href]="'#collapse' + plato._id"
-                                    role="button" aria-expanded="false" aria-controls="{{plato._id}}">+ informacion</a>
+                                <!-- <a class="btn btn-primary" data-toggle="collapse" [attr.href]="'#collapse' + plato._id"
+                                    role="button" aria-expanded="false" aria-controls="{{plato._id}}">+ informacion</a> -->
                             </div>
                         </div>
                     </div>
@@ -91,4 +91,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
+
+            </div>
+
+    

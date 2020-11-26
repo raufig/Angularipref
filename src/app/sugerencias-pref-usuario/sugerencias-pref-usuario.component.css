@@ -1,6 +1,6 @@
 .menu-card {
-    margin-top: 200px;
-    position: relative;
+    margin-top: 150px;
+    /* position: relative; */
     width: 300px;
     height: 350px;
     background: transparent;
@@ -8,7 +8,7 @@
 
 .menu-card-image {
     position: relative;
-    top: -50%;
+    top: -30%;
     left: 10%;
     width: 80%;
     height: 45%;
@@ -29,7 +29,7 @@
 
 .food-card-content {
     position: absolute;
-    bottom: 30%;
+    top: 150px;
     right: 0;
     width: 100%;
     height: auto;
@@ -87,9 +87,10 @@
     /* padding-top: 15px; */
 }
 .menu-botones {
-    position: absolute;
-    left: 50%;
-    bottom: -32%;
+    /* position: absolute; */
+    margin-left: 170px;
+    margin-bottom: -27%;
+    margin-top: 66px;
     transform: translate(-50%, -105%);
     z-index: 7;
     width: auto;
