@@ -1,11 +1,15 @@
 
 <div class="contenido-index">
-    <h2 class="text-white"> <img class="logo-index mb-1" src="../../assets/img/home/logoblanco.png" alt="logo-ipref">IPref</h2>
+    <h2 class="text-white"> <img class="logo-index mb-1" src="../../assets/img/home/Recurso10.png" alt="logo-ipref"></h2>
 </div>
-
+<div style="font-size: 34px" class="checkboxSelect">
+    <span>Restaurantes</span>
+    <input class="switch right" type="checkbox" [(ngModel)]="showIndex" />
+    <span>Usuarios</span>
+  </div>
 <div class="contenedor">
-     <app-formulario-persona></app-formulario-persona>
-     <!-- <app-formulario-empresa></app-formulario-empresa>  -->
+     <app-formulario-persona *ngIf="showIndex"></app-formulario-persona>
+      <app-formulario-empresa *ngIf="!showIndex"></app-formulario-empresa> 
 </div>
 
 

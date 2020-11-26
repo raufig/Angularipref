@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OrdenesService } from '../service/ordenes.service';
 import { ActivatedRoute } from '@angular/router';
+
 @Component({
   selector: 'app-sugerencias-pref-usuario',
   templateUrl: './sugerencias-pref-usuario.component.html',
@@ -26,47 +27,50 @@ export class SugerenciasPrefUsuarioComponent implements OnInit {
     );
   }
 
-//list = this.menu.filter(x=> x._id === idPlato)[0]._id
-
-  //inicio = 1
-
-/*   aumentar(cantidad) {
-    let list = this.menu.filter(x=> x._id === cantidad)[0].unidad
-    let toNum =parseInt(list)
-    this.inicio = ++ toNum
-    console.log(this.inicio)
-    //let selectedcant = (<HTMLInputElement>document.getElementById(`${list}`)).value;
-    //let cantiNumber = parseInt(selectedcant)
-    //this.inicio = ++ cantiNumber;
-    //console.log(cantiNumber)
-  } */
-
- /*  disminuir() {
-    this.inicio = --this.inicio;
-    console.log(this.inicio)
-  } */
   selectedFood = {
-    rest_id:'',
+    rest_id: '',
     nombre_plato:[],
-    descrip_plato:[]
+    descrip_plato:[],
+    cantidad:0,
+    total_orden: 0
   };
-  
+  sumTotal = []
 
   crearOrden(event, rest, nombre, descrip, idPlato) {
+
     let list = this.menu.filter(x=> x._id === idPlato)[0]._id
+    let pricePlato = (<HTMLInputElement>document.getElementById(`price${list}`)).value
+    let Total = parseInt(pricePlato)
     let cantidad = (<HTMLInputElement>document.getElementById(`${list}`)).value;
     let cantiNumber = parseInt(cantidad)
-    console.log("cantidadSelected",cantidad)
     if (cantiNumber <= 0) {
       alert("seleccione cantidad que desea")
     }else{
-    this.selectedFood = Object.assign({
-      rest_id: rest,
-      nombre_plato: nombre,
-      descrip_plato: descrip,
-      //cantidad: canti
-    })
+      this.selectedFood.rest_id = this.menuRestId
+      this.selectedFood.nombre_plato.push(nombre);
+      this.selectedFood.descrip_plato.push(descrip);
+      this.selectedFood.cantidad = cantiNumber;
+      let sum = 0
+      this.sumTotal.push(Total)
+      this.sumTotal.forEach ((numero)=>{
+        sum += numero;
+    });
+      this.selectedFood.total_orden = sum
+      alert("Agregado a la canasta")
+  }
+  }
+  cancelar(){
     console.log(this.selectedFood);
   }
+  EnviarOrden(){
+    this.ordenes.createOrder(this.selectedFood).subscribe(
+      (res)=>{
+        console.log(res)
+        alert("Orden creada, pronto entregaran tu pedido")
+      },(err)=>{
+        console.log(err)
+        alert("Tu orden se encuentra vacia")
+      }
+    )
   }
 }

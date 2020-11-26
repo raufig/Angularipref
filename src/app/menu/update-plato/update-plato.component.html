@@ -1,0 +1,79 @@
+<section>
+        
+<div class="crud-ingredientes" *ngFor="let plato of platoInfo">
+    <div class="cont-imagen">
+      <img src="{{plato.img}}"
+          alt="foto-plato" id="imgp">
+          
+      <input type="file" id="input-foto" >
+    </div>
+    <div class="form-grupo">
+      <label >Nombre plato</label>
+      <input name="nombre" type="text">
+    </div>
+    
+    <div class="form-grupo">
+      <label >Categoria</label>
+      <input  name="Categoria" type="text" value="{{plato.categoria}}">
+      
+    </div>
+  
+    <div class="form-grupo">
+      <label>Descripcion</label>
+      <textarea  name="Descripcion">{{plato.descrip}}</textarea>
+    </div>
+  
+    <div class="tiempoyprecio container d-flex justify-content-between" >
+      <div class="grupo-tiempo">
+        <label>Tiempo de preparacion</label>
+        <input  name="Tiempo de preparacion" type="text" placeholder="minutos" value="{{plato.tiempoPreparacion}}">
+      </div>
+      <div class="grupo-precio">
+        <label>Precio</label>
+        <input  name="Precio" type="text" value="{{plato.precio}}">
+      </div>
+    </div>
+    
+  
+    <div class="grupo-ingresar-ingrediente" >
+      <input list="ingredientesUpdate" type="text" placeholder="Ingrediente" id="ingredienteUpdate">
+      <input type="number" placeholder="Gramaje" id="gramajeUpdate">
+      <i class="fas fa-plus" id="agregar" type="button" ></i>
+  
+    </div>
+    
+    <datalist id="ingredientesUpdate" >
+      
+      <option ></option>
+    
+    </datalist>
+  
+    <table class="tabla-listado mt-5">
+  
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Gramaje (g)</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+  
+        <tbody id="tabla" *ngFor="let ingredi of plato.ingredientesName">
+          <td>{{ingredi}}</td>
+          <td></td>
+          <td><i class="fas fa-trash eliminar" ></i></td>
+  
+        </tbody>
+       
+        
+     
+    </table>
+  
+    <div class="botones-ingredientes">
+      <button class="btn-edi">Corregir</button>
+      <button class="btn-eli" (click)="hideformUpdate()" >Cancelar</button>
+      <button class="btn-cre" >Actualizar</button>
+    </div>
+  </div>
+
+    </section>

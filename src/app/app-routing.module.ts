@@ -15,7 +15,8 @@ import { MenuComponent } from './menu/menu.component';
 import { PreferenciasUsuarioComponent } from './preferencias-usuario/preferencias-usuario.component';
 import { FormularioMesasComponent } from './mesas-restaurante/formulario-mesas/formulario-mesas.component'
 import { SugerenciasPrefUsuarioComponent } from './sugerencias-pref-usuario/sugerencias-pref-usuario.component';
-import { AuthGuard } from './guard/auth.guard'
+import { AuthGuard } from './guard/auth.guard';
+import { UpdatePlatoComponent } from './menu/update-plato/update-plato.component';
 
 const routes: Routes = [
   
@@ -61,6 +62,10 @@ const routes: Routes = [
   },
   {
     path: 'menu', component: MenuComponent,
+    // canActivate: [AuthGuard]
+  },
+  {
+    path: 'menu/:_id', component: MenuComponent,
     // canActivate: [AuthGuard]
   },
   {
