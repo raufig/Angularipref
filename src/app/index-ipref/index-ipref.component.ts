@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index-ipref.component.css']
 })
 export class IndexIprefComponent implements OnInit {
-
+  showIndex:boolean
   constructor() { }
 
   ngOnInit(): void {

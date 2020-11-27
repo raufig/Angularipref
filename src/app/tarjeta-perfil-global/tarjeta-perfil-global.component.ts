@@ -12,7 +12,12 @@ export class TarjetaPerfilGlobalComponent implements OnInit {
 
   info =[];
   ngOnInit(): void {
-     this.informacion.getinfo().subscribe(
+    this.infoUser()
+    this.inforest()
+  }
+
+  infoUser(){
+    this.informacion.getinfo().subscribe(
       (res)=>{
         this.info = res
       },
@@ -21,6 +26,15 @@ export class TarjetaPerfilGlobalComponent implements OnInit {
       }
     ) 
   }
-
+  inforest(){
+    this.informacion.getinfoR().subscribe(
+      (res)=>{
+        this.info = res
+      },
+      (err)=>{
+        console.log(err)
+      }
+    ) 
+  }
   
 }

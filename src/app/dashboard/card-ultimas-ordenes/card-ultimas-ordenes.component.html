@@ -1,8 +1,10 @@
-<div class="tarjeta-ultimas d-flex ">
+<div class="tarjeta-ultimas d-flex " *ngFor="let ordenes of info">
   <img src="../../../assets/img/home/german.jpg" alt="imagen-orden">
   <div>
-    <h3>Hamburguesa</h3>
-    <p>La mejor hamburguesa de la sabana de occidente <i class="fas fa-bell"></i></p>
+    <h3>{{ordenes.nombre_plato}}</h3>
+    <p>{{ordenes.descrip_plato}} <i class="fas fa-bell"></i></p>
   </div>
-  <p class="precio-orden-tarjeta">$5.600</p>
+  <p class="precio-orden-tarjeta">{{ordenes.total_orden}}</p>
 </div>
+
+

@@ -5,8 +5,9 @@ const Schema = mongoose.Schema;
 
 const schemaPlatos = new mongoose.Schema(
   {
-    rest_id: { type: Schema.Types.ObjectId, ref: 'rest' },
+    
     nombre: String,
+    rest_id: { type: Schema.Types.ObjectId, ref: 'rest' },
     categoria: String,
     descrip: String,
     tiempoPreparacion: Number,

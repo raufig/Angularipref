@@ -126,14 +126,6 @@
 }
 
 
-
-#camiCrud {
-    position: absolute;
-    left: 37%;
-    z-index: 10000;
-    top: -900px;
-    transition: 0.4s all;
-}
 .totalFood{
     border: none;
     width: 55px;

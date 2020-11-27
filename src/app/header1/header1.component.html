@@ -1,4 +1,4 @@
-<header class="d-flex justify-content-between">
+<header class="d-flex justify-content-between" *ngFor="let infor of info">
    
     <div class="cont-menu" >
         <span><i class="fas fa-bars mr-3 pt-1" id="icono-nav" (click)='desplegar()'></i></span>
@@ -9,15 +9,15 @@
 
     <div class="ubicacion-perfil">
         <span><i class="fas fa-map-marker-alt "></i></span>     
-        <img class="img-usuario" src="../../assets/img/home/perfil.jpg" alt="imagen-usuario">
+        <img class="img-usuario" src="{{infor.img}}" alt="imagen-usuario">
     </div>
 
 
     <nav id="nav" (click)="ocultar()">
         <img class="logo-bienvenida"  src="../../assets/img/home/logo-negro.png" alt="logo-ipref">
         <hr>
-        <img class="img-usuario" routerLink='perfilUsuario' src="../../assets/img/home/perfil.jpg" alt="imagen-usuario">
-        <p class="nombre-usuario">Hola Andrés</p>
+        <img class="img-usuario" routerLink='/perfil-usuario' src="{{infor.img}}" alt="imagen-usuario">
+        <p class="nombre-usuario">Hola {{infor.name}}</p>
 
         <section class="items-nav">
             <a routerLink='/home'>Home</a>

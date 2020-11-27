@@ -57,8 +57,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmI1NjQ1N
 
 
 ###
-GET http://localhost:3000/api/user/edit-perfil
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmI1NjQ1NTUyZjFmZTQzODgwODRjZDAiLCJkb2N1IjoiMTAxMDEwMTAiLCJuYW1lIjoiUmF1bCIsImVtYWlsIjoicmF1bEBtYWlsLmNvbSIsImlhdCI6MTYwNTgxNzE3Mn0.uYib2zq4wsK4x79d9Pkn1izjZAlEPjREXYRi5pq5Udk
+GET http://localhost:3000/api/rest/ordenes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmI1NjQ1NTUyZjFmZTQzODgwODRjZDAiLCJkb2N1IjoiMTAxMDEwMTAiLCJuYW1lIjoiUmF1bCIsImVtYWlsIjoicmF1bEBtYWlsLmNvbSIsImlhdCI6MTYwNjQwNDIyOX0.M-gX3bG_WbV42PE0fRJjvvwh22gQKrTFZK8JmQ2ZVS8
 
 ###
 PUT http://localhost:3000/api/user/edit-perfil
@@ -85,6 +85,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmI1NDYyM
     "contidad": 2,
     "total_orden":30000
   }
+
+  ###
+
+  GET http://localhost:3000/api/rest/ordenes
+  Authorization: Bearer 
 
 
 
@@ -158,33 +163,33 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmE1ODYwY
 
 POST http://localhost:3000/api/rest/crearPlato
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmMwMWJkMzEyMjVmMTMzMzgyNzBlMGMiLCJuaXQiOiIiLCJuYW1lIjoiQ3JlcGVzICYgV2FmZmxlcyIsImVtYWlsIjoiYWRtaW5AY3JlcGVzLmNvbSIsImlhdCI6MTYwNjQzMDY2NX0.SJG8TO1W8WBlqLIdd-FIHv6Q4QNL48yTnY78lUBal44
 
 {
     
-    "nombre": "otro Plato!",
-    "categoria": "Pitas",
-    "descrip": "Este plato Es una chimba",
-    "tiempoPreparacion": 120,
-    "ingredientes": [
-        "5fa76efdc40c7c5219db5c2b",
-        "5fa76efdc40c7c5219db5c15",
-        "5fa76efdc40c7c5219db5c36",
-        "5fa76efdc40c7c5219db5c10",
-        "5fa76efdc40c7c5219db5c37",
-        "5fa76efdc40c7c5219db5c3b",
-        "5fa76efdc40c7c5219db5c1a",
-        "5fa76efdc40c7c5219db5c1e",
-        "5fa76efdc40c7c5219db5c22"
-],
+    "categoria": "categoriaaaaa",
+    "descrip": "descripcionooooo",
     "gruposAliment": [
-        "5fa76098c40c7c5219db5c08",
-        "5fa76098c40c7c5219db5c09",
-        "5fa76098c40c7c5219db5c0c",
-        "5fa76098c40c7c5219db5c0d",
-        "5fa76098c40c7c5219db5c0e"
+        "5fa76098c40c7c5219db5c0f", 
+        "5fa76098c40c7c5219db5c0f", 
+        "5fa765ae31dc7eb63d21ac22", 
+        "5fa76098c40c7c5219db5c0f"
+        ],
+    "ingredientes": [
+        "5fa76efdc40c7c5219db5c17", 
+        "5fa76efdc40c7c5219db5c18", 
+        "5fa76efdc40c7c5219db5c2a", 
+        "5fa76efdc40c7c5219db5c17"
     ],
-    "precio": 15000
+    "ingredientesName": [
+        "Alcachofas", 
+        "Apio", 
+        "Curry", 
+        "Alcachofas"
+    ],
+        "nombre": "platoooooooo",
+    "precio": 6000,
+    "tiempoPreparacion": 60
 }
 
 ###
@@ -196,7 +201,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3M
 ###
 PUT http://localhost:3000/api/rest/MenuRestaurante/5fb3ea889b7a840fb81e158b
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFkZTI3MTI4NDc0YzBhYjg0M2VmOWUiLCJuaXQiOiIxMDEwMTAxIiwibmFtZSI6InJlc3QxIiwiZW1haWwiOiJlbWFpbDFAbWFpbC5jb20iLCJpYXQiOjE2MDUyMzEyOTZ9.BNDYEk8T_pc5nbOSaLUDezwcH4UVU-RrncEdH74sNB4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmMwMWJkMzEyMjVmMTMzMzgyNzBlMGMiLCJuaXQiOiIiLCJuYW1lIjoiQ3JlcGVzICYgV2FmZmxlcyIsImVtYWlsIjoiYWRtaW5AY3JlcGVzLmNvbSIsImlhdCI6MTYwNjQzMDY2NX0.SJG8TO1W8WBlqLIdd-FIHv6Q4QNL48yTnY78lUBal44
 
 {
     

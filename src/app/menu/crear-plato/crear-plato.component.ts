@@ -20,9 +20,9 @@ export class CrearPlatoComponent implements OnInit {
     categoria: '',
     descrip: '',
     tiempoPreparacion: '',
-    ingredientesName: '',
-    ingredientes: '',
-    gruposAliment: '',
+    ingredientesName: [],
+    ingredientes: [],
+    gruposAliment: [],
     precio: '',
     img: '',
     
@@ -68,19 +68,30 @@ let foto = (<HTMLImageElement>document.getElementById('imgp'));
 
 }
   crear() {
+    
+    let nombre = (<HTMLInputElement>document.getElementById('nombre')).value;
+let categoria = (<HTMLInputElement>document.getElementById('categoria')).value;
+let descrip = (<HTMLInputElement>document.getElementById('descrip')).value;
+let tiempo = (<HTMLInputElement>document.getElementById('tiempo')).value;
+let precio = (<HTMLInputElement>document.getElementById('precio')).value;
+this.crearPlato.nombre = nombre
+this.crearPlato.categoria = categoria
+this.crearPlato.descrip = descrip
+this.crearPlato.tiempoPreparacion = tiempo
+this.crearPlato.precio = precio
 
-    const file = new FormData();
+/*     const file = new FormData();
     file.append('nombre', this.crearPlato.nombre);
     file.append('categoria', this.crearPlato.categoria);
     file.append('descrip', this.crearPlato.descrip);
     file.append('tiempoPreparacion', this.crearPlato.tiempoPreparacion);
-    file.append('ingredientesName', this.crearPlato.ingredientesName);
-    file.append('ingredientes', this.crearPlato.ingredientes);
-    file.append('gruposAliment', this.crearPlato.gruposAliment);
+    file.append('ingredientesName[]', this.crearPlato.ingredientesName);
+    file.append('ingredientes[]', this.crearPlato.ingredientes);
+    file.append('gruposAliment[]', this.crearPlato.gruposAliment);
     file.append('precio', this.crearPlato.precio);
-    file.append('img', this.img, this.img.name);
+    file.append('img', this.img, this.img.name); */
     
-    this.crearmenu.crearMenu(file).subscribe(
+    this.crearmenu.crearMenu(this.crearPlato).subscribe(
       (res)=>{ 
         console.log(res)
         this.hideformCrud()
@@ -95,6 +106,7 @@ let foto = (<HTMLImageElement>document.getElementById('imgp'));
 
   hideformCrud(){
     document.getElementById('MenuCrud').style.top="-900px"
+    this.router.navigate(['/menu'])
   }
 
   refresh(): void { window.location.reload(); }
@@ -114,20 +126,20 @@ ingreHtml=[]
     if(!ingredi && !gramaje){
       alert('ingrese ingrediente y gramaje')
     }else{
-      this.ingrdientesInfo.IDingreNombre.push(list._id)
-      this.ingrdientesInfo.NombreIngredi.push(list.nombre)
-      this.ingrdientesInfo.gruposAlimen.push(list.ref_id)
-     
+      this.crearPlato.ingredientes.push(list._id)
+      this.crearPlato.ingredientesName.push(list.nombre)
+      this.crearPlato.gruposAliment.push(list.ref_id)
+
       this.ingreHtml.push( {
         ingrediente: list.nombre,
         gramaje: gramaje
         
       })
-      this.crearPlato=Object.assign({
+      /* this.crearPlato=Object.assign({
         ingredientesName: this.ingrdientesInfo.NombreIngredi,
         ingredientes: this.ingrdientesInfo.IDingreNombre,
         gruposAliment: this.ingrdientesInfo.gruposAlimen
-      })
+      }) */
 
       console.log("para enviar a DB",this.crearPlato)
       

@@ -85,12 +85,12 @@ restCtrl.firstLogInRest = async (req, res) => {
     let newPlato = await Platos.findOne ({nombre: req.body.nombre});
     if (newPlato)
     res.status(400).send("Plato ya existe")
-    let imgRoute = null;
+    /* let imgRoute = null;
     if (req.file.filename) {
       imgRoute = url + "/public/" + req.file.filename;
     } else {
       imgRoute = null;
-    }
+    } */
     
     newPlato = new Platos({
       rest_id: req.rest._id,
@@ -102,7 +102,7 @@ restCtrl.firstLogInRest = async (req, res) => {
       ingredientes: req.body.ingredientes,
       gruposAliment: req.body.gruposAliment,
       precio: req.body.precio,
-      img: imgRoute
+     // img: imgRoute
     });
     const result = await newPlato.save();
     res.status(200).send("creado")
@@ -137,8 +137,8 @@ restCtrl.firstLogInRest = async (req, res) => {
   }
 
   restCtrl.getInfoRest = async (req, res) =>{
-    let infoUser = await User.find({_id: req.user._id})
-    res.status(200).send(infoUser)
+    let infoRest = await Rest.find({_id: req.rest._id})
+    res.status(200).send(infoRest)
   }
   
   restCtrl.editInfoRest = async (req, res) =>{
@@ -163,8 +163,9 @@ restCtrl.firstLogInRest = async (req, res) => {
   }
 
   restCtrl.getOrdenes = async (req, res) =>{
-    const ordenes = await Orden.find({rest_id: req.rest._id})
+    const ordenes = await Orden.find({rest_id: req.rest._id}).sort({createdAt: 1})
     res.status(200).send(ordenes);
   }
+  
 
 module.exports = restCtrl;
